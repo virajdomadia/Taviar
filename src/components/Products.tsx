@@ -2,14 +2,110 @@ import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 const products = [
-  { name: "D-Stress", desc: "Natural stress relief capsules", pack: "30 Capsules", image: "/product-dstress.jpg" },
-  { name: "Respiquite", desc: "Sleep quiet, breathe right", pack: "30 Tablets", image: "/product-respiquite.jpg" },
-  { name: "Salt-ed", desc: "D Ultimate Med capsules", pack: "2 Capsules", image: "/product-salted.jpg" },
-  { name: "OrthoMantra", desc: "Joint & mobility support", pack: "60 Tablets", image: "/product-orthomantra.jpg" },
-  { name: "Muvoquick", desc: "Muscle & vitality support", pack: "100 gm", image: "/product-muvoquick.jpg" },
-  { name: "GluOK", desc: "Blood sugar balance support", pack: "90 Tablets", image: "/product-gluok.jpg" },
-  { name: "Relievain", desc: "Fast-acting pain relief", pack: "30 Tablets", image: "/product-relievain.jpg" },
-  { name: "FEM-FIT Syrup", desc: "Female reproductive wellness", pack: "225ml", image: "/product-femfit.jpg" },
+  {
+    name: "D-Stress",
+    desc: "Empowering a Healthier Mind, Naturally.",
+    pack: "30 Capsules",
+    image: "/product-dstress.jpg",
+    benefits: [
+      "Natural Herbal Formula",
+      "Helps Reduce Everyday Stress",
+      "D-Stress Calms Your Mind",
+      "Improves Your Quality of Sleep",
+      "Promotes Mental Calmness",
+      "Enhances Focus & Concentration",
+      "Supports Emotional Wellness",
+      "FSSAI Certified Nutraceutical",
+    ],
+  },
+  {
+    name: "Respiquite",
+    desc: "Sleep quiet, breathe right",
+    pack: "30 Tablets",
+    image: "/product-respiquite.jpg",
+    benefits: [],
+  },
+  {
+    name: "Salt-ed",
+    desc: "Power Your Performance.",
+    pack: "2 Capsules",
+    image: "/product-salted.jpg",
+    benefits: [
+      "Supports Men's Vitality",
+      "Enhances Stamina & Endurance",
+      "Promotes Natural Energy Levels",
+      "Supports Overall Male Wellness",
+      "Herbal Formula for Daily Performance",
+    ],
+  },
+  {
+    name: "OrthoMantra",
+    desc: "Strength That Supports Every Step.",
+    pack: "60 Tablets",
+    image: "/product-orthomantra.jpg",
+    benefits: [
+      "Supports Bone Strength & Density",
+      "Promotes Healthy Joint Function",
+      "Helps Improve Mobility & Flexibility",
+      "Supports Natural Bone Healing",
+      "Enriched with Premium Ayurvedic Herbs",
+    ],
+  },
+  {
+    name: "Muvoquick",
+    desc: "Strength in Every Step.",
+    pack: "100 gm",
+    image: "/product-muvoquick.jpg",
+    benefits: [
+      "Supports Muscle Strength & Recovery",
+      "Promotes Joint Flexibility & Mobility",
+      "Supports Healthy Nerve Function",
+      "Helps Reduce Physical Fatigue",
+      "Enriched with Powerful Ayurvedic Herbs",
+    ],
+  },
+  {
+    name: "GluOK",
+    desc: "Balance Your Blood Sugar. Naturally.",
+    pack: "90 Tablets",
+    image: "/product-gluok.jpg",
+    benefits: [
+      "Helps Maintain Healthy Blood Sugar Levels",
+      "Supports Healthy Glucose Metabolism",
+      "Promotes Better Insulin Function",
+      "Supports Pancreatic Health",
+      "Helps Reduce Sugar Cravings",
+      "Rich in Powerful Ayurvedic Herbal Extracts",
+      "Supports Overall Metabolic Wellness",
+    ],
+  },
+  {
+    name: "Relievain",
+    desc: "Relief That Moves With You.",
+    pack: "30 Tablets",
+    image: "/product-relievain.jpg",
+    benefits: [
+      "Helps Relieve Joint & Muscle Discomfort",
+      "Supports Healthy Joint Mobility",
+      "Helps Reduce Inflammation Naturally",
+      "Promotes Flexibility & Active Living",
+      "Enriched with Powerful Ayurvedic Herbs",
+    ],
+  },
+  {
+    name: "FEM-FIT Syrup",
+    desc: "Balanced Hormones. Healthier You.",
+    pack: "225ml",
+    image: "/product-femfit.jpg",
+    benefits: [
+      "Supports Uterine Health",
+      "Promotes Menstrual Balance",
+      "Helps Ease PMS Symptoms",
+      "Supports Hormonal Wellness",
+      "Promotes Female Reproductive Health",
+      "Sugar-Free Ayurvedic Formula",
+    ],
+  },
 ];
 
 export default function Products() {
@@ -57,6 +153,19 @@ export default function Products() {
                 <p className="font-body text-[12px] font-light text-muted leading-[1.6] mb-3">
                   {p.desc}
                 </p>
+                {p.benefits.length > 0 && (
+                  <ul className="text-left mb-4 space-y-1.5">
+                    {p.benefits.map((b) => (
+                      <li
+                        key={b}
+                        className="font-body text-[11px] font-light text-muted leading-[1.5] flex items-start gap-1.5"
+                      >
+                        <span className="text-gold mt-[1px]">✔</span>
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 <div className="font-body text-[10px] tracking-[2px] text-gold uppercase">
                   {p.pack}
                 </div>

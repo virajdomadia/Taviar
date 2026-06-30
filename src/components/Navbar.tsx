@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const navLinks = [
-  { label: "Company", href: "#about" },
-  { label: "Products", href: "#products" },
-  { label: "Certifications", href: "#certifications" },
-  { label: "Partner", href: "#partner" },
+  { label: "About Us", href: "/about" },
+  { label: "Products", href: "/#products" },
+  { label: "Certifications", href: "/#certifications" },
+  { label: "Partner", href: "/#partner" },
 ];
 
 export default function Navbar() {
@@ -37,32 +38,32 @@ export default function Navbar() {
             : "py-[18px] md:py-[26px] bg-transparent border-b border-transparent"
         }`}
       >
-        <a href="#hero" className="cursor-pointer select-none shrink-0">
+        <Link href="/" className="cursor-pointer select-none shrink-0">
           <img
             src="/logo-white.png"
             alt="Taviar"
             className="h-16 md:h-20 w-auto"
           />
-        </a>
+        </Link>
 
         <div className="hidden lg:flex items-center gap-10">
           {navLinks.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="font-body text-[11.5px] tracking-[2px] text-cream/60 uppercase no-underline transition-colors duration-[220ms] hover:text-cream"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
 
-        <a
-          href="#contact"
+        <Link
+          href="/#contact"
           className="hidden lg:inline-block font-body text-[11px] tracking-[2.5px] font-medium text-gold uppercase no-underline border border-gold/45 px-[26px] py-[11px] transition-all duration-300 hover:bg-gold/10"
         >
-          Book Consultation
-        </a>
+          Contact Us
+        </Link>
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -82,22 +83,22 @@ export default function Navbar() {
         }`}
       >
         {navLinks.map((item) => (
-          <a
+          <Link
             key={item.label}
             href={item.href}
             onClick={() => setMenuOpen(false)}
             className="font-body text-[13px] tracking-[3px] text-cream/70 uppercase no-underline transition-colors duration-[220ms] hover:text-cream"
           >
             {item.label}
-          </a>
+          </Link>
         ))}
-        <a
-          href="#contact"
+        <Link
+          href="/#contact"
           onClick={() => setMenuOpen(false)}
           className="mt-4 font-body text-[11px] tracking-[2.5px] font-medium text-gold uppercase no-underline border border-gold/45 px-[26px] py-[11px] transition-all duration-300 hover:bg-gold/10"
         >
           Book Consultation
-        </a>
+        </Link>
       </div>
     </>
   );

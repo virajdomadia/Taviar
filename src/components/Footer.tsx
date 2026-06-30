@@ -1,9 +1,9 @@
 const footerLinks = {
   Company: [
-    { label: "About Us", href: "#about" },
-    { label: "Why Choose Us", href: "#why" },
-    { label: "Partner With Us", href: "#partner" },
-    { label: "FAQ", href: "#faq" },
+    { label: "About Us", href: "/about" },
+    { label: "Why Choose Us", href: "/#why" },
+    { label: "Partner With Us", href: "/#partner" },
+    { label: "FAQ", href: "/#faq" },
   ],
   Products: [
     { label: "Acne Care", href: "#products" },

@@ -1,10 +1,11 @@
+import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
 
 const stats = [
-  { value: "10+", label: "Years of experience" },
-  { value: "100+", label: "Products formulated" },
-  { value: "5000+", label: "Customers served" },
-  { value: "20+", label: "Distribution partners" },
+  { value: "2024", label: "Year established" },
+  { value: "100%", label: "Genuine, sourced medicines" },
+  { value: "Pan-India", label: "Distribution network" },
+  { value: "B2B & B2C", label: "Wholesale & retail supply" },
 ];
 
 export default function About() {
@@ -20,30 +21,39 @@ export default function About() {
             className="font-heading font-light text-dark-green leading-[1.18] tracking-[-0.5px] mb-11"
             style={{ fontSize: "clamp(36px, 3.8vw, 56px)" }}
           >
-            A decade of Ayurvedic
+            Delivering trust.
             <br />
-            <em>formulation</em>, made to
+            <em>Distributing</em> care.
             <br />
-            pharmaceutical standards.
+            Empowering healthcare.
           </h2>
           <div className="w-10 h-px bg-gold mb-10" />
           <p className="font-body text-[15px] font-light text-body-text leading-[1.88] tracking-[0.18px] mb-7">
-            For over ten years, The Skin Pharmacy has developed and manufactured
-            authentic Ayurvedic skincare under one roof — pairing classical
-            formulations with modern, GMP-certified production capability and
-            rigorous in-house testing.
+            Established in 2024, Taviar Enterprises Private Limited is a
+            fast-growing pharmaceutical wholesale and retail distribution
+            company dedicated to delivering quality healthcare solutions with
+            integrity and excellence.
           </p>
           <p className="font-body text-[15px] font-light text-body-text leading-[1.88] tracking-[0.18px] mb-13">
-            Our mission is singular: to make clinically dependable, beautifully
-            crafted botanical skincare — and to be the manufacturing partner of
-            choice for brands who demand the same standard.
+            As a trusted third-party distributor, we source genuine medicines
+            from reputed manufacturers and ensure their seamless supply to
+            doctors, clinics, hospitals, and healthcare professionals — so they
+            can focus on what matters most: improving patient lives.
           </p>
-          <a
-            href="#partner"
-            className="font-body text-[11px] tracking-[2px] font-medium text-dark-green uppercase no-underline border-b border-dark-green/35 pb-[3px] transition-colors duration-[250ms] hover:border-dark-green"
-          >
-            Explore partnership →
-          </a>
+          <div className="flex flex-wrap items-center gap-9">
+            <Link
+              href="/about"
+              className="font-body text-[11px] tracking-[2px] font-medium text-dark-green uppercase no-underline border-b border-dark-green/35 pb-[3px] transition-colors duration-[250ms] hover:border-dark-green"
+            >
+              Learn more about us →
+            </Link>
+            <a
+              href="#partner"
+              className="font-body text-[11px] tracking-[2px] font-medium text-dark-green/70 uppercase no-underline border-b border-dark-green/20 pb-[3px] transition-colors duration-[250ms] hover:border-dark-green hover:text-dark-green"
+            >
+              Explore partnership →
+            </a>
+          </div>
         </ScrollReveal>
 
         {/* Right visual + stats */}
@@ -70,7 +80,7 @@ export default function About() {
                   }}
                 >
                   <span className="font-heading text-[52px] font-light text-gold/55 leading-none">
-                    त
+                    T
                   </span>
                 </div>
                 <div

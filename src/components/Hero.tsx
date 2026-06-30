@@ -25,7 +25,7 @@ export default function Hero() {
             className="font-body text-[10.5px] tracking-[5px] text-gold/70 uppercase mb-13"
             style={{ animation: "fadeInUp .8s ease both" }}
           >
-            Ayurvedic Skin Science · Est. 2018
+            Established 2024 · Trusted Healthcare Partner
           </div>
 
           <h1
@@ -35,11 +35,11 @@ export default function Hero() {
               animation: "fadeInUp .9s .12s ease both",
             }}
           >
-            The Art of
+            Where
             <br />
-            <em className="italic font-light">Ayurvedic</em>
+            <em className="italic font-light">Ayurveda</em>
             <br />
-            Precision.
+            Meets Modern Health Care
           </h1>
 
           <div
@@ -51,9 +51,8 @@ export default function Hero() {
             className="font-heading text-lg md:text-xl font-light italic text-cream/[0.52] leading-[1.65] tracking-[0.3px] max-w-[420px] mx-auto lg:mx-0 mb-14"
             style={{ animation: "fadeInUp .9s .32s ease both" }}
           >
-            Five thousand years of botanical wisdom,
-            <br />
-            validated by modern clinical science.
+            Every product we deliver reflects our commitment to quality,
+            authenticity, and excellence in healthcare.
           </p>
 
           <div
@@ -64,13 +63,13 @@ export default function Hero() {
               href="#products"
               className="font-body text-[11px] tracking-[3px] font-semibold text-dark-green bg-gold uppercase no-underline px-10 py-[17px] inline-block transition-colors duration-300 hover:bg-gold-hover"
             >
-              Discover the Elixir
+              Explore Products
             </a>
             <a
               href="#about"
               className="font-body text-[11px] tracking-[2px] text-cream/[0.58] uppercase no-underline border-b border-gold/30 pb-0.5 transition-colors duration-[250ms] hover:text-cream"
             >
-              Our Philosophy →
+              About Taviar →
             </a>
           </div>
         </div>
