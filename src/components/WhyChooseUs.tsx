@@ -38,10 +38,10 @@ function FeatureCard({ num, name, desc }: { num: string; name: string; desc: str
 
 export default function WhyChooseUs() {
   return (
-    <section id="why" className="bg-dark-green py-40 px-20">
+    <section id="why" className="bg-dark-green py-20 md:py-40 px-5 md:px-10 lg:px-20">
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}
-        <div className="flex justify-between items-end mb-[100px]">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-8 md:gap-0 mb-14 md:mb-[100px]">
           <ScrollReveal>
             <div className="font-body text-[10.5px] tracking-[4px] text-gold/65 uppercase mb-6">
               Why Choose Us
@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Feature grid */}
-        <div className="grid grid-cols-3 gap-0.5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5">
           {features.map((f, i) => (
             <ScrollReveal key={f.num} delay={i % 3}>
               <FeatureCard {...f} />

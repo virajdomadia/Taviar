@@ -16,7 +16,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="faq" className="bg-cream py-40 px-20">
+    <section id="faq" className="bg-cream py-20 md:py-40 px-5 md:px-10 lg:px-20">
       <div className="max-w-[880px] mx-auto">
         {/* Header */}
         <ScrollReveal className="text-center mb-[84px]">

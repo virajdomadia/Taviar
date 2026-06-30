@@ -25,7 +25,7 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="bg-dark py-40 px-20 border-t border-gold/[0.08]"
+      className="bg-dark py-20 md:py-40 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]"
     >
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}
@@ -48,7 +48,7 @@ export default function Certifications() {
         </ScrollReveal>
 
         {/* Cert grid */}
-        <div className="grid grid-cols-4 gap-0.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5">
           {certs.map((cert, i) => (
             <ScrollReveal key={cert.name} delay={i}>
               <div className="group bg-cream/[0.04] border border-cream/[0.08] p-[48px_36px] text-center transition-all duration-[400ms] hover:bg-cream/[0.07] hover:border-gold/[0.22]">

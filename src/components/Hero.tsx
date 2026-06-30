@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full h-screen min-h-[720px] bg-dark-green overflow-hidden flex items-center"
+      className="relative w-full min-h-screen bg-dark-green overflow-hidden flex items-center pt-36 pb-20 md:pt-40 lg:pt-44"
     >
       <HeroCanvas />
 
@@ -18,9 +18,9 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-[2] w-full max-w-[1440px] mx-auto px-20 grid grid-cols-2 items-center gap-[60px]">
+      <div className="relative z-[2] w-full max-w-[1440px] mx-auto px-5 md:px-10 lg:px-20 grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-[60px]">
         {/* Left copy */}
-        <div>
+        <div className="text-center lg:text-left">
           <div
             className="font-body text-[10.5px] tracking-[5px] text-gold/70 uppercase mb-13"
             style={{ animation: "fadeInUp .8s ease both" }}
@@ -43,12 +43,12 @@ export default function Hero() {
           </h1>
 
           <div
-            className="w-12 h-px bg-gold/50 mb-9"
+            className="w-12 h-px bg-gold/50 mb-9 mx-auto lg:mx-0"
             style={{ animation: "fadeInUp .9s .22s ease both" }}
           />
 
           <p
-            className="font-heading text-xl font-light italic text-cream/[0.52] leading-[1.65] tracking-[0.3px] max-w-[420px] mb-14"
+            className="font-heading text-lg md:text-xl font-light italic text-cream/[0.52] leading-[1.65] tracking-[0.3px] max-w-[420px] mx-auto lg:mx-0 mb-14"
             style={{ animation: "fadeInUp .9s .32s ease both" }}
           >
             Five thousand years of botanical wisdom,
@@ -57,7 +57,7 @@ export default function Hero() {
           </p>
 
           <div
-            className="flex items-center gap-5"
+            className="flex flex-col sm:flex-row items-center gap-5"
             style={{ animation: "fadeInUp .9s .46s ease both" }}
           >
             <a
@@ -76,7 +76,7 @@ export default function Hero() {
         </div>
 
         {/* Right bottle */}
-        <div className="relative flex items-center justify-center min-h-[600px]">
+        <div className="relative hidden lg:flex items-center justify-center min-h-[600px]">
           {/* Glow aura */}
           <div
             className="absolute w-[380px] h-[380px] rounded-full"

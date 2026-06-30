@@ -21,18 +21,19 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-darkest px-20 pt-[88px] pb-11">
+    <footer className="bg-darkest px-5 md:px-10 lg:px-20 pt-14 md:pt-[88px] pb-11">
       <div className="max-w-[1280px] mx-auto">
         {/* Columns */}
         <div
-          className="grid gap-20 mb-20"
-          style={{ gridTemplateColumns: "2fr 1fr 1fr 1fr" }}
+          className="grid gap-10 md:gap-20 mb-14 md:mb-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]"
         >
           {/* Brand */}
           <div>
-            <div className="font-heading text-base tracking-[4.5px] text-cream uppercase mb-6">
-              The Skin Pharmacy
-            </div>
+            <img
+              src="/logo-white.png"
+              alt="Taviar"
+              className="h-20 w-auto mb-6"
+            />
             <p className="font-body text-[13px] font-light text-cream/[0.36] leading-[1.84] max-w-[260px]">
               Premium Ayurvedic skincare formulated to pharmaceutical standards.
               Where ancient wisdom meets modern skin science.
@@ -81,11 +82,11 @@ export default function Footer() {
         />
 
         {/* Bottom bar */}
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="font-body text-xs font-light text-cream/20 tracking-[0.4px]">
             &copy; 2024 The Skin Pharmacy. All rights reserved.
           </div>
-          <div className="flex gap-8">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
             {["Privacy Policy", "Terms of Use", "Cookie Policy"].map((text) => (
               <a
                 key={text}

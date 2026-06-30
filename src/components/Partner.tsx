@@ -8,7 +8,7 @@ const partners = [
 
 export default function Partner() {
   return (
-    <section id="partner" className="bg-darker py-40 px-20">
+    <section id="partner" className="bg-darker py-20 md:py-40 px-5 md:px-10 lg:px-20">
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}
         <ScrollReveal className="text-center mb-24">
@@ -30,7 +30,7 @@ export default function Partner() {
         </ScrollReveal>
 
         {/* Partner cards */}
-        <div className="grid grid-cols-3 gap-0.5 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5 mb-16">
           {partners.map((p, i) => (
             <ScrollReveal key={p.num} delay={i}>
               <div className="group relative overflow-hidden cursor-pointer bg-cream/[0.04] border border-cream/[0.08] p-[56px_44px_48px] transition-all duration-[400ms] hover:bg-cream/[0.07] hover:border-gold/[0.22]">

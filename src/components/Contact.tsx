@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-dark-green py-40 px-20"
+      className="relative overflow-hidden bg-dark-green py-20 md:py-40 px-5 md:px-10 lg:px-20"
     >
       {/* Top accent line */}
       <div
@@ -29,8 +29,7 @@ export default function Contact() {
       />
 
       <div
-        className="max-w-[1280px] mx-auto relative grid items-start gap-24"
-        style={{ gridTemplateColumns: "1.1fr 1fr" }}
+        className="max-w-[1280px] mx-auto relative grid items-start gap-14 md:gap-24 grid-cols-1 lg:grid-cols-[1.1fr_1fr]"
       >
         {/* Form */}
         <ScrollReveal>
@@ -44,7 +43,7 @@ export default function Contact() {
             Start a <em className="text-gold">conversation.</em>
           </h2>
           <form onSubmit={(e) => e.preventDefault()}>
-            <div className="grid grid-cols-2 gap-[18px] mb-[18px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[18px] mb-[18px]">
               <input type="text" placeholder="Full name" className={inputClass} />
               <input type="email" placeholder="Email address" className={inputClass} />
             </div>

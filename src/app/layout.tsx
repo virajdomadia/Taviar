@@ -27,7 +27,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${jakarta.variable}`}>
+    <html
+      lang="en"
+      className={`${cormorant.variable} ${jakarta.variable}`}
+      suppressHydrationWarning
+    >
       <body className="font-body">{children}</body>
     </html>
   );
