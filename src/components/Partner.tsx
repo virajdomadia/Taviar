@@ -8,11 +8,11 @@ const partners = [
 
 export default function Partner() {
   return (
-    <section id="partner" className="bg-darker py-20 md:py-40 px-5 md:px-10 lg:px-20">
+    <section id="partner" className="bg-darker py-10 md:py-20 px-5 md:px-10 lg:px-20">
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}
         <ScrollReveal className="text-center mb-24">
-          <div className="font-body text-[10.5px] tracking-[4px] text-gold/55 uppercase mb-7">
+          <div className="font-body text-[14px] font-bold tracking-[4px] text-gold/55 uppercase mb-7">
             Partner With Us
           </div>
           <h2
@@ -23,9 +23,8 @@ export default function Partner() {
             <br />
             <em className="text-gold/[0.82]">with our capability.</em>
           </h2>
-          <p className="font-body text-[15px] font-light text-cream/[0.42] max-w-[480px] mx-auto leading-[1.82]">
-            Three ways to work with a manufacturing partner built for quality,
-            scale, and reliability.
+          <p className="font-body text-[15px] font-light text-cream/[0.42] max-w-[680px] mx-auto leading-[1.82]">
+            Three ways to work with a manufacturing partner built for quality, scale, and reliability.
           </p>
         </ScrollReveal>
 
@@ -33,18 +32,16 @@ export default function Partner() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5 mb-16">
           {partners.map((p, i) => (
             <ScrollReveal key={p.num} delay={i}>
-              <div className="group relative overflow-hidden cursor-pointer bg-cream/[0.04] border border-cream/[0.08] p-[56px_44px_48px] transition-all duration-[400ms] hover:bg-cream/[0.07] hover:border-gold/[0.22]">
+              <div className="group relative overflow-hidden cursor-pointer bg-cream/[0.04] border border-cream/[0.08] p-[56px_44px_48px] transition-all duration-[400ms] hover:bg-cream/[0.07] hover:border-gold/[0.22] h-full flex flex-col">
                 <div className="absolute top-5 right-7 font-heading text-[72px] font-light text-gold/10 leading-none select-none pointer-events-none">
                   {p.num}
                 </div>
-                <div className="font-body text-[10.5px] tracking-[3px] text-gold/60 uppercase mb-6">
-                  {p.num}
-                </div>
+                
                 <h3 className="font-heading text-[26px] font-normal text-cream leading-[1.22] mb-[22px]">
                   {p.name}
                 </h3>
                 <div className="w-7 h-px bg-gold/40 mb-[22px]" />
-                <p className="font-body text-sm font-light text-cream/[0.52] leading-[1.82] mb-10">
+                <p className="font-body text-sm font-light text-cream/[0.52] leading-[1.82] mb-10 flex-grow">
                   {p.desc}
                 </p>
                 <div className="font-body text-[11px] tracking-[2px] font-medium text-gold uppercase border-t border-cream/[0.08] pt-[22px]">

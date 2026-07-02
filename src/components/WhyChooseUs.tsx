@@ -14,14 +14,11 @@ function FeatureCard({ num, name, desc }: { num: string; name: string; desc: str
       <div className="absolute top-5 right-7 font-heading text-[72px] font-light text-gold/10 leading-none select-none pointer-events-none">
         {num}
       </div>
-      <div className="font-body text-[10.5px] tracking-[3px] text-gold/60 uppercase mb-6">
-        {num}
-      </div>
       <h3 className="font-heading text-[26px] font-normal text-cream leading-[1.22] mb-[22px]">
         {name}
       </h3>
       <div className="w-7 h-px bg-gold/40 mb-[22px]" />
-      <p className="font-body text-sm font-light text-cream/[0.52] leading-[1.82]">
+      <p className="font-body text-base font-light text-cream/[0.52] leading-[1.82]">
         {desc}
       </p>
       <div
@@ -42,7 +39,7 @@ export default function WhyChooseUs() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-8 md:gap-0 mb-14 md:mb-[100px]">
           <ScrollReveal>
-            <div className="font-body text-[10.5px] tracking-[4px] text-gold/65 uppercase mb-6">
+            <div className="font-body text-[14px] font-bold tracking-[4px] text-gold/65 uppercase mb-6">
               Why Choose Us
             </div>
             <h2
@@ -55,7 +52,7 @@ export default function WhyChooseUs() {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={2} className="max-w-[300px]">
-            <p className="font-body text-sm font-light text-cream/[0.42] leading-[1.82]">
+            <p className="font-body text-lg font-semibold text-cream/[0.42] leading-[1.82]">
               Delivering quality pharmaceutical and Ayurvedic products trusted
               by doctors and healthcare professionals.
             </p>

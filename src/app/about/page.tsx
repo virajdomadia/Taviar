@@ -34,7 +34,7 @@ export default function AboutPage() {
           }}
         />
         <div className="relative max-w-[1280px] mx-auto text-center">
-          <div className="font-body text-[10.5px] tracking-[5px] text-gold/70 uppercase mb-9">
+          <div className="font-body text-[13px] font-semibold tracking-[5px] text-gold/70 uppercase mb-9">
             About Taviar &middot; Est. 2024
           </div>
           <h1
@@ -45,8 +45,8 @@ export default function AboutPage() {
             <br />
             <em className="italic font-light text-gold/[0.85]">Distributing</em> Care.
           </h1>
-          <p className="font-body text-[15px] font-light text-cream/[0.52] max-w-[560px] mx-auto leading-[1.9]">
-            A fast-growing pharmaceutical wholesale and retail distribution
+          <p className="font-body text-[18px] font-light text-cream/[0.52] max-w-[800px] mx-auto leading-[1.9]">
+            A fast growing pharmaceutical wholesale and retail distribution
             company, dedicated to delivering quality healthcare solutions with
             integrity and excellence.
           </p>
@@ -57,7 +57,7 @@ export default function AboutPage() {
       <section className="bg-cream py-20 md:py-36 px-5 md:px-10 lg:px-20">
         <div className="max-w-[820px] mx-auto">
           <ScrollReveal>
-            <div className="font-body text-[10.5px] tracking-[4px] text-gold uppercase mb-9">
+            <div className="font-body text-[13px] font-semibold tracking-[4px] text-gold uppercase mb-9">
               Our Story
             </div>
             <p className="font-body text-[15px] font-light text-body-text leading-[1.9] tracking-[0.18px] mb-7">

@@ -74,9 +74,9 @@ export default function Contact() {
                 Address
               </div>
               <div className="font-heading text-[19px] font-light text-cream/[0.82] leading-[1.55]">
-                Plot 14, Pharma Industrial Estate,
+                202, Royal Enclave, Parsi Panchayat Rd, Amba Wadi, Natwar Nagar, 
                 <br />
-                Hyderabad, Telangana 500032
+                Andheri East, Mumbai, Maharashtra 400069
               </div>
             </div>
 
@@ -96,7 +96,7 @@ export default function Contact() {
                   Email
                 </div>
                 <div className="font-heading text-[19px] font-light text-cream/[0.82]">
-                  care@theskinpharmacy.in
+                  taviar@gmail.com
                 </div>
               </div>
             </div>

@@ -110,11 +110,11 @@ const products = [
 
 export default function Products() {
   return (
-    <section id="products" className="bg-cream py-20 md:py-40 px-5 md:px-10 lg:px-20">
+    <section id="products" className="bg-cream py-10 px-5 md:px-10 lg:px-20">
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}
         <ScrollReveal className="text-center mb-24">
-          <div className="font-body text-[10.5px] tracking-[4px] text-gold uppercase mb-7">
+          <div className="font-body text-[14px] tracking-[4px] text-gold uppercase font-semibold mb-7">
             From Our Portfolio
           </div>
           <h2
@@ -125,19 +125,19 @@ export default function Products() {
             <br />
             <em>for every wellness concern.</em>
           </h2>
-          <p className="font-body text-[15px] font-light text-muted max-w-[460px] mx-auto leading-[1.82]">
+          <p className="font-body text-[15px] font-light text-muted max-w-[700px] mx-auto leading-[1.82]">
             Over one hundred Ayurvedic formulations, trusted across the country.
           </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mb-24">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mb-12">
           {products.map((p, i) => (
             <ScrollReveal
               key={p.name}
               delay={i % 4}
-              className="group bg-white border border-[rgba(200,148,10,0.14)] transition-all duration-[450ms] hover:-translate-y-1.5 hover:shadow-[0_24px_60px_rgba(200,148,10,0.14)]"
+              className="group bg-white border border-[rgba(200,148,10,0.14)] rounded-2xl transition-all duration-[450ms] hover:-translate-y-1.5 hover:shadow-[0_24px_60px_rgba(200,148,10,0.14)] relative"
             >
-              <div className="relative w-full aspect-[4/5] overflow-hidden bg-cream">
+              <div className="relative w-full aspect-[4/5] overflow-hidden bg-cream rounded-t-2xl">
                 <Image
                   src={p.image}
                   alt={p.name}
@@ -146,19 +146,18 @@ export default function Products() {
                   className="object-cover transition-transform duration-[600ms] group-hover:scale-105"
                 />
               </div>
-              <div className="px-5 py-6 text-center">
-                <div className="font-heading text-lg font-normal text-dark-green mb-1.5">
-                  {p.name}
+              <div className="px-5 py-6 pb-12">
+                <div className="text-center mb-3">
+                  <div className="font-heading text-2xl font-bold text-dark-green mb-3">
+                    {p.name}
+                  </div>
                 </div>
-                <p className="font-body text-[12px] font-light text-muted leading-[1.6] mb-3">
-                  {p.desc}
-                </p>
                 {p.benefits.length > 0 && (
-                  <ul className="text-left mb-4 space-y-1.5">
+                  <ul className="text-left space-y-1.5">
                     {p.benefits.map((b) => (
                       <li
                         key={b}
-                        className="font-body text-[11px] font-light text-muted leading-[1.5] flex items-start gap-1.5"
+                        className="font-body text-[13px] font-bold text-muted leading-[1.5] flex items-start gap-1.5"
                       >
                         <span className="text-gold mt-[1px]">✔</span>
                         <span>{b}</span>
@@ -166,23 +165,13 @@ export default function Products() {
                     ))}
                   </ul>
                 )}
-                <div className="font-body text-[10px] tracking-[2px] text-gold uppercase">
-                  {p.pack}
-                </div>
+              </div>
+              <div className="absolute bottom-5 right-5 font-body text-[10px] tracking-[2px] text-gold uppercase">
+                {p.pack}
               </div>
             </ScrollReveal>
           ))}
         </div>
-
-        {/* CTA */}
-        <ScrollReveal delay={2} className="text-center">
-          <a
-            href="#"
-            className="font-body text-[11px] tracking-[3px] font-semibold text-dark-green bg-gold uppercase no-underline px-11 py-[17px] inline-block transition-colors duration-300 hover:bg-gold-hover"
-          >
-            View Complete Product Range
-          </a>
-        </ScrollReveal>
       </div>
     </section>
   );

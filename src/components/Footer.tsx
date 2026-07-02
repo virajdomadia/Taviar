@@ -32,7 +32,7 @@ export default function Footer() {
             <img
               src="/logo-white.png"
               alt="Taviar"
-              className="h-20 w-auto mb-6"
+              className="h-30 w-auto mb-6"
             />
             <p className="font-body text-[13px] font-light text-cream/[0.36] leading-[1.84] max-w-[260px]">
               Premium Ayurvedic skincare formulated to pharmaceutical standards.

@@ -42,13 +42,8 @@ export default function Hero() {
             Meets Modern Health Care
           </h1>
 
-          <div
-            className="w-12 h-px bg-gold/50 mb-9 mx-auto lg:mx-0"
-            style={{ animation: "fadeInUp .9s .22s ease both" }}
-          />
-
           <p
-            className="font-heading text-lg md:text-xl font-light italic text-cream/[0.52] leading-[1.65] tracking-[0.3px] max-w-[420px] mx-auto lg:mx-0 mb-14"
+            className="font-heading text-lg md:text-xl font-light italic text-white leading-[1.65] tracking-[0.3px] max-w-[500px] mx-auto lg:mx-0 mb-14"
             style={{ animation: "fadeInUp .9s .32s ease both" }}
           >
             Every product we deliver reflects our commitment to quality,
@@ -61,13 +56,13 @@ export default function Hero() {
           >
             <a
               href="#products"
-              className="font-body text-[11px] tracking-[3px] font-semibold text-dark-green bg-gold uppercase no-underline px-10 py-[17px] inline-block transition-colors duration-300 hover:bg-gold-hover"
+              className="font-body text-[14px] tracking-[3px] font-bold text-dark-green bg-gold uppercase no-underline px-10 py-[17px] inline-block transition-colors duration-300 hover:bg-gold-hover"
             >
               Explore Products
             </a>
             <a
               href="#about"
-              className="font-body text-[11px] tracking-[2px] text-cream/[0.58] uppercase no-underline border-b border-gold/30 pb-0.5 transition-colors duration-[250ms] hover:text-cream"
+              className="font-body text-[14px] tracking-[2px] font-bold text-cream/[0.58] uppercase no-underline border-b border-gold/30 pb-0.5 transition-colors duration-[250ms] hover:text-cream"
             >
               About Taviar →
             </a>

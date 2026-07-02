@@ -51,7 +51,7 @@ export default function Navbar() {
             <Link
               key={item.label}
               href={item.href}
-              className="font-body text-[11.5px] tracking-[2px] text-cream/60 uppercase no-underline transition-colors duration-[220ms] hover:text-cream"
+              className="font-body text-[14px] tracking-[2px] text-cream/60 uppercase no-underline transition-colors duration-[220ms] hover:text-cream"
             >
               {item.label}
             </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
             key={item.label}
             href={item.href}
             onClick={() => setMenuOpen(false)}
-            className="font-body text-[13px] tracking-[3px] text-cream/70 uppercase no-underline transition-colors duration-[220ms] hover:text-cream"
+            className="font-body text-[16px] tracking-[3px] text-cream/70 uppercase no-underline transition-colors duration-[220ms] hover:text-cream"
           >
             {item.label}
           </Link>

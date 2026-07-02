@@ -30,7 +30,7 @@ export default function Certifications() {
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}
         <ScrollReveal className="text-center mb-24">
-          <div className="font-body text-[10.5px] tracking-[4px] text-gold/65 uppercase mb-7">
+          <div className="font-body text-[13px] font-bold tracking-[4px] text-gold/65 uppercase mb-7">
             Certifications &amp; Compliance
           </div>
           <h2
@@ -41,10 +41,7 @@ export default function Certifications() {
             <br />
             <em className="text-gold/[0.82]">you can verify.</em>
           </h2>
-          <p className="font-body text-[15px] font-light text-cream/[0.42] max-w-[480px] mx-auto leading-[1.82]">
-            Manufactured and audited under nationally and internationally
-            recognised quality frameworks.
-          </p>
+          <p className="font-body text-[18px] font-light text-cream/[0.42] max-w-[950px] mx-auto leading-[1.82]">Manufactured and audited under nationally and internationally recognised quality frameworks.</p>
         </ScrollReveal>
 
         {/* Cert grid */}
