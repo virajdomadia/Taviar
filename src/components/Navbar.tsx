@@ -34,13 +34,13 @@ export default function Navbar() {
       <nav
         className={`fixed inset-x-0 top-0 z-[200] flex items-center justify-between px-5 md:px-10 lg:px-[60px] transition-all duration-[350ms] ${
           scrolled
-            ? "py-[13px] bg-[rgba(12,20,12,0.94)] backdrop-blur-[18px] border-b border-gold/10"
+            ? "py-[13px] bg-[rgba(255,255,255,0.92)] backdrop-blur-[18px] border-b border-gold/[0.14]"
             : "py-[18px] md:py-[26px] bg-transparent border-b border-transparent"
         }`}
       >
         <Link href="/" className="cursor-pointer select-none shrink-0">
           <img
-            src="/logo-white.png"
+            src="/logo.png"
             alt="Taviar"
             className="h-16 md:h-20 w-auto"
           />
@@ -51,7 +51,7 @@ export default function Navbar() {
             <Link
               key={item.label}
               href={item.href}
-              className="font-body text-[14px] tracking-[2px] text-cream/60 uppercase no-underline transition-colors duration-[220ms] hover:text-cream"
+              className="font-body text-[14px] tracking-[2px] text-dark-green/70 uppercase no-underline transition-colors duration-[220ms] hover:text-dark-green"
             >
               {item.label}
             </Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
 
         <Link
           href="/#contact"
-          className="hidden lg:inline-block font-body text-[11px] tracking-[2.5px] font-medium text-gold uppercase no-underline border border-gold/45 px-[26px] py-[11px] transition-all duration-300 hover:bg-gold/10"
+          className="hidden lg:inline-block font-body text-[11px] tracking-[2.5px] font-medium text-dark-green uppercase no-underline border border-dark-green/40 px-[26px] py-[11px] transition-all duration-300 hover:bg-gold-light"
         >
           Contact Us
         </Link>
@@ -70,15 +70,15 @@ export default function Navbar() {
           className="lg:hidden flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1"
           aria-label="Toggle menu"
         >
-          <span className={`block w-5 h-[1.5px] bg-cream transition-all duration-300 ${menuOpen ? "translate-y-[6.5px] rotate-45" : ""}`} />
-          <span className={`block w-5 h-[1.5px] bg-cream transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-5 h-[1.5px] bg-cream transition-all duration-300 ${menuOpen ? "-translate-y-[6.5px] -rotate-45" : ""}`} />
+          <span className={`block w-5 h-[1.5px] bg-dark-green transition-all duration-300 ${menuOpen ? "translate-y-[6.5px] rotate-45" : ""}`} />
+          <span className={`block w-5 h-[1.5px] bg-dark-green transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-5 h-[1.5px] bg-dark-green transition-all duration-300 ${menuOpen ? "-translate-y-[6.5px] -rotate-45" : ""}`} />
         </button>
       </nav>
 
       {/* Mobile menu overlay */}
       <div
-        className={`fixed inset-0 z-[199] bg-[rgba(12,20,12,0.97)] backdrop-blur-[24px] flex flex-col items-center justify-center gap-8 transition-all duration-[400ms] lg:hidden ${
+        className={`fixed inset-0 z-[199] bg-[rgba(255,255,255,0.98)] backdrop-blur-[24px] flex flex-col items-center justify-center gap-8 transition-all duration-[400ms] lg:hidden ${
           menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
@@ -87,7 +87,7 @@ export default function Navbar() {
             key={item.label}
             href={item.href}
             onClick={() => setMenuOpen(false)}
-            className="font-body text-[16px] tracking-[3px] text-cream/70 uppercase no-underline transition-colors duration-[220ms] hover:text-cream"
+            className="font-body text-[16px] tracking-[3px] text-dark-green/75 uppercase no-underline transition-colors duration-[220ms] hover:text-dark-green"
           >
             {item.label}
           </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
         <Link
           href="/#contact"
           onClick={() => setMenuOpen(false)}
-          className="mt-4 font-body text-[11px] tracking-[2.5px] font-medium text-gold uppercase no-underline border border-gold/45 px-[26px] py-[11px] transition-all duration-300 hover:bg-gold/10"
+          className="mt-4 font-body text-[11px] tracking-[2.5px] font-medium text-dark-green uppercase no-underline border border-dark-green/40 px-[26px] py-[11px] transition-all duration-300 hover:bg-gold-light"
         >
           Book Consultation
         </Link>

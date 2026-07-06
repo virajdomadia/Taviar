@@ -3,20 +3,20 @@
 import ScrollReveal from "./ScrollReveal";
 
 const inputClass =
-  "w-full px-5 py-[17px] bg-cream/[0.06] border border-cream/[0.14] text-cream font-body text-sm font-light outline-none tracking-[0.3px] transition-colors duration-[250ms] focus:border-gold/50";
+  "w-full px-5 py-[17px] bg-cream/40 border border-dark-green/[0.16] text-dark-green font-body text-sm font-light outline-none tracking-[0.3px] transition-colors duration-[250ms] focus:border-gold/60";
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-dark-green py-20 md:py-40 px-5 md:px-10 lg:px-20"
+      className="relative overflow-hidden bg-white py-20 md:py-40 px-5 md:px-10 lg:px-20"
     >
       {/* Top accent line */}
       <div
         className="absolute top-0 inset-x-0 h-px"
         style={{
           background:
-            "linear-gradient(to right, transparent, rgba(212,168,83,0.35), transparent)",
+            "linear-gradient(to right, transparent, rgba(245,166,35,0.35), transparent)",
         }}
       />
       {/* Background glow */}
@@ -24,7 +24,7 @@ export default function Contact() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 60% 70% at 30% 40%, rgba(212,168,83,0.06) 0%, transparent 70%)",
+            "radial-gradient(ellipse 60% 70% at 30% 40%, rgba(245,166,35,0.06) 0%, transparent 70%)",
         }}
       />
 
@@ -37,7 +37,7 @@ export default function Contact() {
             Get In Touch
           </div>
           <h2
-            className="font-heading font-light text-cream leading-[1.14] tracking-[-0.5px] mb-12"
+            className="font-heading font-light text-dark-green leading-[1.14] tracking-[-0.5px] mb-12"
             style={{ fontSize: "clamp(34px, 3.6vw, 52px)" }}
           >
             Start a <em className="text-gold">conversation.</em>
@@ -73,21 +73,21 @@ export default function Contact() {
               <div className="font-body text-[10px] tracking-[2.5px] text-gold/55 uppercase mb-3">
                 Address
               </div>
-              <div className="font-heading text-[19px] font-light text-cream/[0.82] leading-[1.55]">
-                202, Royal Enclave, Parsi Panchayat Rd, Amba Wadi, Natwar Nagar, 
+              <div className="font-heading text-[19px] font-light text-dark-green/80 leading-[1.55]">
+                202, Royal Enclave, Parsi Panchayat Rd, Amba Wadi, Natwar Nagar,
                 <br />
                 Andheri East, Mumbai, Maharashtra 400069
               </div>
             </div>
 
-            <div className="h-px bg-cream/10" />
+            <div className="h-px bg-dark-green/10" />
 
             <div className="grid grid-cols-2 gap-7">
               <div>
                 <div className="font-body text-[10px] tracking-[2.5px] text-gold/55 uppercase mb-3">
                   Phone
                 </div>
-                <div className="font-heading text-[19px] font-light text-cream/[0.82]">
+                <div className="font-heading text-[19px] font-light text-dark-green/80">
                   +91 90000 12345
                 </div>
               </div>
@@ -95,26 +95,26 @@ export default function Contact() {
                 <div className="font-body text-[10px] tracking-[2.5px] text-gold/55 uppercase mb-3">
                   Email
                 </div>
-                <div className="font-heading text-[19px] font-light text-cream/[0.82]">
+                <div className="font-heading text-[19px] font-light text-dark-green/80">
                   taviar@gmail.com
                 </div>
               </div>
             </div>
 
-            <div className="h-px bg-cream/10" />
+            <div className="h-px bg-dark-green/10" />
 
             <div>
               <div className="font-body text-[10px] tracking-[2.5px] text-gold/55 uppercase mb-3">
                 Working Hours
               </div>
-              <div className="font-heading text-[19px] font-light text-cream/[0.82] leading-[1.55]">
+              <div className="font-heading text-[19px] font-light text-dark-green/80 leading-[1.55]">
                 Mon – Sat · 9:30 am – 6:30 pm
               </div>
             </div>
 
             <a
               href="#"
-              className="inline-flex items-center justify-center gap-3 mt-2 px-7 py-4 border border-gold/45 no-underline font-body text-[11px] tracking-[2.5px] font-medium text-gold uppercase transition-colors duration-300 self-start hover:bg-gold/10"
+              className="inline-flex items-center justify-center gap-3 mt-2 px-7 py-4 border border-dark-green/40 no-underline font-body text-[11px] tracking-[2.5px] font-medium text-dark-green uppercase transition-colors duration-300 self-start hover:bg-gold-light"
             >
               Chat on WhatsApp
             </a>

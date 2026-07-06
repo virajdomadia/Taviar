@@ -10,21 +10,21 @@ const features = [
 
 function FeatureCard({ num, name, desc }: { num: string; name: string; desc: string }) {
   return (
-    <div className="group relative overflow-hidden cursor-pointer h-full bg-cream/[0.04] border border-cream/[0.08] p-[52px_44px_48px] transition-all duration-[400ms] hover:bg-cream/[0.07] hover:border-gold/[0.22]">
+    <div className="group relative overflow-hidden cursor-pointer h-full bg-cream border border-gold/[0.16] p-[52px_44px_48px] transition-all duration-[400ms] hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(245,166,35,0.14)]">
       <div className="absolute top-5 right-7 font-heading text-[72px] font-light text-gold/10 leading-none select-none pointer-events-none">
         {num}
       </div>
-      <h3 className="font-heading text-[26px] font-normal text-cream leading-[1.22] mb-[22px]">
+      <h3 className="font-heading text-[26px] font-normal text-dark-green leading-[1.22] mb-[22px]">
         {name}
       </h3>
       <div className="w-7 h-px bg-gold/40 mb-[22px]" />
-      <p className="font-body text-base font-light text-cream/[0.52] leading-[1.82]">
+      <p className="font-body text-base font-light text-body-text leading-[1.82]">
         {desc}
       </p>
       <div
         className="absolute bottom-0 left-0 h-0.5 w-0 transition-[width] duration-500 group-hover:w-full"
         style={{
-          background: "linear-gradient(to right, #D4A853, rgba(212,168,83,0.3))",
+          background: "linear-gradient(to right, #F5A623, rgba(245,166,35,0.3))",
           transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
         }}
       />
@@ -34,7 +34,7 @@ function FeatureCard({ num, name, desc }: { num: string; name: string; desc: str
 
 export default function WhyChooseUs() {
   return (
-    <section id="why" className="bg-dark-green py-20 md:py-40 px-5 md:px-10 lg:px-20">
+    <section id="why" className="bg-white py-20 md:py-40 px-5 md:px-10 lg:px-20 border-t border-dark-green/[0.06]">
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-8 md:gap-0 mb-14 md:mb-[100px]">
@@ -43,16 +43,16 @@ export default function WhyChooseUs() {
               Why Choose Us
             </div>
             <h2
-              className="font-heading font-light text-cream leading-[1.08] tracking-[-0.5px]"
+              className="font-heading font-light text-dark-green leading-[1.08] tracking-[-0.5px]"
               style={{ fontSize: "clamp(38px, 4.2vw, 64px)" }}
             >
               Trusted Healthcare
               <br />
-              <em className="text-gold/[0.82]">Partner.</em>
+              <em>Partner.</em>
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={2} className="max-w-[300px]">
-            <p className="font-body text-lg font-semibold text-cream/[0.42] leading-[1.82]">
+            <p className="font-body text-lg font-semibold text-muted leading-[1.82]">
               Delivering quality pharmaceutical and Ayurvedic products trusted
               by doctors and healthcare professionals.
             </p>

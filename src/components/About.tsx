@@ -66,7 +66,7 @@ export default function About() {
                 className="w-72 h-72 rounded-full flex items-center justify-center relative border border-gold/[0.18]"
                 style={{
                   background:
-                    "radial-gradient(circle at 35% 32%, rgba(255,235,165,0.70) 0%, rgba(212,168,83,0.45) 38%, rgba(26,40,32,0.25) 72%, rgba(26,40,32,0.35) 100%)",
+                    "radial-gradient(circle at 35% 32%, rgba(255,235,165,0.70) 0%, rgba(245,166,35,0.45) 38%, rgba(26,40,32,0.25) 72%, rgba(26,40,32,0.35) 100%)",
                   boxShadow:
                     "0 48px 96px rgba(0,0,0,0.08), 0 12px 32px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.6)",
                 }}
@@ -75,12 +75,12 @@ export default function About() {
                   className="w-[158px] h-[158px] rounded-full border-2 border-gold/60 flex items-center justify-center"
                   style={{
                     background:
-                      "radial-gradient(circle at 38% 38%, rgba(255,230,140,0.85) 0%, rgba(212,168,83,0.65) 50%, rgba(160,110,30,0.40) 100%)",
+                      "radial-gradient(circle at 38% 38%, rgba(255,230,140,0.85) 0%, rgba(245,166,35,0.65) 50%, rgba(160,110,30,0.40) 100%)",
                   }}
                 >
                   <span
                     className="font-heading text-[80px] font-black text-gold/95 leading-none"
-                    style={{ textShadow: "0 2px 8px rgba(212,168,83,0.4), 0 4px 12px rgba(0,0,0,0.15)" }}
+                    style={{ textShadow: "0 2px 8px rgba(245,166,35,0.4), 0 4px 12px rgba(0,0,0,0.15)" }}
                   >
                     T
                   </span>

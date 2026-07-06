@@ -3,10 +3,10 @@ import ScrollReveal from "./ScrollReveal";
 
 const products = [
   {
+    id: "d-stress",
     name: "D-Stress",
-    desc: "Empowering a Healthier Mind, Naturally.",
     pack: "30 Capsules",
-    image: "/product-dstress.jpg",
+    image: "/product-dstress-removebg-preview.png",
     benefits: [
       "Natural Herbal Formula",
       "Helps Reduce Everyday Stress",
@@ -16,59 +16,14 @@ const products = [
       "Enhances Focus & Concentration",
       "Supports Emotional Wellness",
       "FSSAI Certified Nutraceutical",
+      "30 Easy-to-Consume Capsules",
     ],
   },
   {
-    name: "Respiquite",
-    desc: "Sleep quiet, breathe right",
-    pack: "30 Tablets",
-    image: "/product-respiquite.jpg",
-    benefits: [],
-  },
-  {
-    name: "Salt-ed",
-    desc: "Power Your Performance.",
-    pack: "2 Capsules",
-    image: "/product-salted.jpg",
-    benefits: [
-      "Supports Men's Vitality",
-      "Enhances Stamina & Endurance",
-      "Promotes Natural Energy Levels",
-      "Supports Overall Male Wellness",
-      "Herbal Formula for Daily Performance",
-    ],
-  },
-  {
-    name: "OrthoMantra",
-    desc: "Strength That Supports Every Step.",
-    pack: "60 Tablets",
-    image: "/product-orthomantra.jpg",
-    benefits: [
-      "Supports Bone Strength & Density",
-      "Promotes Healthy Joint Function",
-      "Helps Improve Mobility & Flexibility",
-      "Supports Natural Bone Healing",
-      "Enriched with Premium Ayurvedic Herbs",
-    ],
-  },
-  {
-    name: "Muvoquick",
-    desc: "Strength in Every Step.",
-    pack: "100 gm",
-    image: "/product-muvoquick.jpg",
-    benefits: [
-      "Supports Muscle Strength & Recovery",
-      "Promotes Joint Flexibility & Mobility",
-      "Supports Healthy Nerve Function",
-      "Helps Reduce Physical Fatigue",
-      "Enriched with Powerful Ayurvedic Herbs",
-    ],
-  },
-  {
+    id: "gluok",
     name: "GluOK",
-    desc: "Balance Your Blood Sugar. Naturally.",
     pack: "90 Tablets",
-    image: "/product-gluok.jpg",
+    image: "/product-gluok-removebg-preview.png",
     benefits: [
       "Helps Maintain Healthy Blood Sugar Levels",
       "Supports Healthy Glucose Metabolism",
@@ -80,10 +35,10 @@ const products = [
     ],
   },
   {
+    id: "relievain",
     name: "Relievain",
-    desc: "Relief That Moves With You.",
     pack: "30 Tablets",
-    image: "/product-relievain.jpg",
+    image: "/product-relievain-removebg-preview.png",
     benefits: [
       "Helps Relieve Joint & Muscle Discomfort",
       "Supports Healthy Joint Mobility",
@@ -93,10 +48,49 @@ const products = [
     ],
   },
   {
+    id: "muvoquick",
+    name: "Muvoquick",
+    pack: "100 gm",
+    image: "/product-muvoquick-removebg-preview.png",
+    benefits: [
+      "Supports Muscle Strength & Recovery",
+      "Promotes Joint Flexibility & Mobility",
+      "Supports Healthy Nerve Function",
+      "Helps Reduce Physical Fatigue",
+      "Enriched with Powerful Ayurvedic Herbs",
+    ],
+  },
+  {
+    id: "orthomantra",
+    name: "OrthoMantra",
+    pack: "60 Tablets",
+    image: "/product-orthomantra-removebg-preview.png",
+    benefits: [
+      "Supports Bone Strength & Density",
+      "Promotes Healthy Joint Function",
+      "Helps Improve Mobility & Flexibility",
+      "Supports Natural Bone Healing",
+      "Enriched with Premium Ayurvedic Herbs",
+    ],
+  },
+  {
+    id: "salt-ed",
+    name: "Salt-ed",
+    pack: "2 Capsules",
+    image: "/product-salted-removebg-preview.png",
+    benefits: [
+      "Supports Men's Vitality",
+      "Enhances Stamina & Endurance",
+      "Promotes Natural Energy Levels",
+      "Supports Overall Male Wellness",
+      "Herbal Formula for Daily Performance",
+    ],
+  },
+  {
+    id: "fem-fit",
     name: "FEM-FIT Syrup",
-    desc: "Balanced Hormones. Healthier You.",
     pack: "225ml",
-    image: "/product-femfit.jpg",
+    image: "/product-femfit-removebg-preview.png",
     benefits: [
       "Supports Uterine Health",
       "Promotes Menstrual Balance",
@@ -106,71 +100,110 @@ const products = [
       "Sugar-Free Ayurvedic Formula",
     ],
   },
+  {
+    id: "kid-ubs",
+    name: "Kid-UBS Syrup",
+    pack: "225ml",
+    image: "/product-kidubes-removebg-preview.png",
+    benefits: [
+      "Supports Urinary System Health",
+      "Promotes Healthy Urinary Flow",
+      "Helps Relieve Urinary Discomfort",
+      "Helps Reduce Burning Sensation During Urination",
+      "Supports Overall Urinary Tract Wellness",
+      "Sugar-Free Ayurvedic Formula",
+    ],
+  },
 ];
 
 export default function Products() {
   return (
-    <section id="products" className="bg-cream py-10 px-5 md:px-10 lg:px-20">
-      <div className="max-w-[1280px] mx-auto">
+    <section id="products" className="bg-white py-20 px-5 md:px-10 lg:px-20">
+      <div className="max-w-[1400px] mx-auto">
         {/* Header */}
-        <ScrollReveal className="text-center mb-24">
-          <div className="font-body text-[14px] tracking-[4px] text-gold uppercase font-semibold mb-7">
-            From Our Portfolio
+        <ScrollReveal className="text-center mb-28">
+          <div className="font-body text-[12px] tracking-[4px] text-gold uppercase font-semibold mb-6 opacity-80">
+            Our Premium Collection
           </div>
           <h2
-            className="font-heading font-light text-dark-green leading-[1.12] tracking-[-0.5px] mb-7"
-            style={{ fontSize: "clamp(36px, 4vw, 58px)" }}
+            className="font-heading font-light text-dark-green leading-[1.15] tracking-[-0.8px] mb-7"
+            style={{ fontSize: "clamp(42px, 5vw, 64px)" }}
           >
-            A complete portfolio,
+            A Complete Portfolio,
             <br />
-            <em>for every wellness concern.</em>
+            <em className="font-light italic">For Every Wellness Concern.</em>
           </h2>
-          <p className="font-body text-[15px] font-light text-muted max-w-[700px] mx-auto leading-[1.82]">
-            Over one hundred Ayurvedic formulations, trusted across the country.
+          <p className="font-body text-[16px] font-light text-muted max-w-[650px] mx-auto leading-[1.8]">
+            Handcrafted Ayurvedic formulations, backed by quality certifications and trusted by thousands across the country.
           </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mb-12">
+        {/* Products Grid - 3 columns for premium feel */}
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 mb-16">
           {products.map((p, i) => (
             <ScrollReveal
-              key={p.name}
-              delay={i % 4}
-              className="group bg-white border border-[rgba(200,148,10,0.14)] rounded-2xl transition-all duration-[450ms] hover:-translate-y-1.5 hover:shadow-[0_24px_60px_rgba(200,148,10,0.14)] relative"
+              key={p.id}
+              delay={i % 3}
+              className="group"
             >
-              <div className="relative w-full aspect-[4/5] overflow-hidden bg-cream rounded-t-2xl">
-                <Image
-                  src={p.image}
-                  alt={p.name}
-                  fill
-                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                  className="object-cover transition-transform duration-[600ms] group-hover:scale-105"
-                />
-              </div>
-              <div className="px-5 py-6 pb-12">
-                <div className="text-center mb-3">
-                  <div className="font-heading text-2xl font-bold text-dark-green mb-3">
-                    {p.name}
-                  </div>
+              <div className="relative bg-white rounded-3xl overflow-hidden transition-all duration-500 ease-out hover:shadow-[0_24px_80px_rgba(245,166,35,0.16)]">
+                {/* Image Container - 1:1 aspect ratio */}
+                <div className="relative w-full aspect-square overflow-hidden bg-gradient-to-br from-cream to-gold/10">
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    fill
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  {/* Overlay on hover */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-gold-light transition-all duration-500" />
                 </div>
-                {p.benefits.length > 0 && (
-                  <ul className="text-left space-y-1.5">
-                    {p.benefits.map((b) => (
+
+                {/* Content Container */}
+                <div className="px-6 py-7 pb-10">
+                  {/* Product Name */}
+                  <h3 className="font-heading text-2xl md:text-3xl font-bold text-dark-green mb-6 transition-colors duration-300 group-hover:text-gold">
+                    {p.name}
+                  </h3>
+
+                  {/* Benefits */}
+                  <ul className="space-y-2 mb-8">
+                    {p.benefits.map((benefit) => (
                       <li
-                        key={b}
-                        className="font-body text-[13px] font-bold text-muted leading-[1.5] flex items-start gap-1.5"
+                        key={benefit}
+                        className="font-body text-xs md:text-sm text-muted flex items-start gap-2.5 leading-snug"
                       >
-                        <span className="text-gold mt-[1px]">✔</span>
-                        <span>{b}</span>
+                        <span className="text-gold font-bold flex-shrink-0 mt-0.5">✔</span>
+                        <span>{benefit}</span>
                       </li>
                     ))}
                   </ul>
-                )}
-              </div>
-              <div className="absolute bottom-5 right-5 font-body text-[10px] tracking-[2px] text-gold uppercase">
-                {p.pack}
+
+                  {/* Pack Info */}
+                  <div className="pt-4 border-t border-gray-100">
+                    <span className="font-body text-xs tracking-widest text-muted/60 uppercase font-medium">
+                      {p.pack}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Border accent - appears on hover */}
+                <div className="absolute inset-0 rounded-3xl border-2 border-gold/0 group-hover:border-gold/30 transition-all duration-500 pointer-events-none" />
               </div>
             </ScrollReveal>
           ))}
+        </div>
+
+        {/* Browse all CTA */}
+        <div className="text-center pt-8">
+          <a
+            href="#products"
+            className="inline-flex items-center gap-3 font-body text-sm tracking-widest text-gold uppercase font-bold hover:gap-4 transition-all duration-300 group"
+          >
+            <span>Browse Full Catalog</span>
+            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+          </a>
         </div>
       </div>
     </section>

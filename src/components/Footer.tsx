@@ -21,7 +21,7 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-darkest px-5 md:px-10 lg:px-20 pt-14 md:pt-[88px] pb-11">
+    <footer className="bg-white px-5 md:px-10 lg:px-20 pt-14 md:pt-[88px] pb-11 border-t border-dark-green/[0.06]">
       <div className="max-w-[1280px] mx-auto">
         {/* Columns */}
         <div
@@ -30,11 +30,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <img
-              src="/logo-white.png"
+              src="/logo.png"
               alt="Taviar"
               className="h-30 w-auto mb-6"
             />
-            <p className="font-body text-[13px] font-light text-cream/[0.36] leading-[1.84] max-w-[260px]">
+            <p className="font-body text-[13px] font-light text-muted leading-[1.84] max-w-[260px]">
               Premium Ayurvedic skincare formulated to pharmaceutical standards.
               Where ancient wisdom meets modern skin science.
             </p>
@@ -43,7 +43,7 @@ export default function Footer() {
                 <a
                   key={s}
                   href="#"
-                  className="font-body text-[11px] tracking-[2px] text-cream/30 no-underline uppercase transition-colors duration-[220ms] hover:text-cream/85"
+                  className="font-body text-[11px] tracking-[2px] text-muted no-underline uppercase transition-colors duration-[220ms] hover:text-dark-green"
                 >
                   {s}
                 </a>
@@ -62,7 +62,7 @@ export default function Footer() {
                   <a
                     key={link.label}
                     href={link.href}
-                    className="font-body text-[13px] font-light text-cream/[0.42] no-underline transition-colors duration-[220ms] hover:text-cream/85"
+                    className="font-body text-[13px] font-light text-muted no-underline transition-colors duration-[220ms] hover:text-dark-green"
                   >
                     {link.label}
                   </a>
@@ -77,13 +77,13 @@ export default function Footer() {
           className="h-px mb-10"
           style={{
             background:
-              "linear-gradient(to right, transparent, rgba(212,168,83,0.22), transparent)",
+              "linear-gradient(to right, transparent, rgba(245,166,35,0.22), transparent)",
           }}
         />
 
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div className="font-body text-xs font-light text-cream/20 tracking-[0.4px]">
+          <div className="font-body text-xs font-light text-muted tracking-[0.4px]">
             &copy; 2024 The Skin Pharmacy. All rights reserved.
           </div>
           <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
@@ -91,7 +91,7 @@ export default function Footer() {
               <a
                 key={text}
                 href="#"
-                className="font-body text-xs font-light text-cream/20 no-underline transition-colors duration-[220ms] hover:text-cream/85"
+                className="font-body text-xs font-light text-muted no-underline transition-colors duration-[220ms] hover:text-dark-green"
               >
                 {text}
               </a>

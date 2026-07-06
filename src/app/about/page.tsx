@@ -25,12 +25,12 @@ export default function AboutPage() {
       <Navbar />
 
       {/* Page header */}
-      <section className="relative bg-dark-green overflow-hidden pt-40 pb-24 md:pt-52 md:pb-32 px-5 md:px-10 lg:px-20">
+      <section className="relative bg-white overflow-hidden pt-40 pb-24 md:pt-52 md:pb-32 px-5 md:px-10 lg:px-20">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse 60% 70% at 70% 20%, rgba(212,168,83,0.1) 0%, transparent 68%)",
+              "radial-gradient(ellipse 60% 70% at 70% 20%, rgba(245,166,35,0.1) 0%, transparent 68%)",
           }}
         />
         <div className="relative max-w-[1280px] mx-auto text-center">
@@ -38,14 +38,14 @@ export default function AboutPage() {
             About Taviar &middot; Est. 2024
           </div>
           <h1
-            className="font-heading font-light text-cream leading-[1.08] tracking-[-1px] mb-9"
+            className="font-heading font-light text-dark-green leading-[1.08] tracking-[-1px] mb-9"
             style={{ fontSize: "clamp(42px, 5.6vw, 80px)" }}
           >
             Delivering Trust.
             <br />
-            <em className="italic font-light text-gold/[0.85]">Distributing</em> Care.
+            <em className="italic font-light">Distributing</em> Care.
           </h1>
-          <p className="font-body text-[18px] font-light text-cream/[0.52] max-w-[800px] mx-auto leading-[1.9]">
+          <p className="font-body text-[18px] font-light text-muted max-w-[800px] mx-auto leading-[1.9]">
             A fast growing pharmaceutical wholesale and retail distribution
             company, dedicated to delivering quality healthcare solutions with
             integrity and excellence.
@@ -87,18 +87,18 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-dark py-20 md:py-36 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]">
+      <section className="bg-white py-20 md:py-36 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]">
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-0.5">
           <ScrollReveal>
-            <div className="bg-cream/[0.04] border border-cream/[0.08] p-[52px_44px_48px] h-full">
+            <div className="bg-cream border border-gold/[0.16] p-[52px_44px_48px] h-full hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(245,166,35,0.14)]">
               <div className="font-body text-[10.5px] tracking-[3px] text-gold/60 uppercase mb-6">
                 Our Mission
               </div>
-              <h2 className="font-heading text-[28px] font-normal text-cream leading-[1.25] mb-[22px]">
+              <h2 className="font-heading text-[28px] font-normal text-dark-green leading-[1.25] mb-[22px]">
                 Quality, integrity, and reach.
               </h2>
               <div className="w-7 h-px bg-gold/40 mb-[22px]" />
-              <p className="font-body text-sm font-light text-cream/[0.52] leading-[1.85]">
+              <p className="font-body text-sm font-light text-body-text leading-[1.85]">
                 To deliver genuine, quality medicines to doctors, clinics,
                 hospitals, and healthcare professionals through a supply
                 network built on trust, transparency, and operational
@@ -107,15 +107,15 @@ export default function AboutPage() {
             </div>
           </ScrollReveal>
           <ScrollReveal delay={2}>
-            <div className="bg-cream/[0.04] border border-cream/[0.08] p-[52px_44px_48px] h-full">
+            <div className="bg-cream border border-gold/[0.16] p-[52px_44px_48px] h-full hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(245,166,35,0.14)]">
               <div className="font-body text-[10.5px] tracking-[3px] text-gold/60 uppercase mb-6">
                 Our Vision
               </div>
-              <h2 className="font-heading text-[28px] font-normal text-cream leading-[1.25] mb-[22px]">
+              <h2 className="font-heading text-[28px] font-normal text-dark-green leading-[1.25] mb-[22px]">
                 India&apos;s most reliable distribution partner.
               </h2>
               <div className="w-7 h-px bg-gold/40 mb-[22px]" />
-              <p className="font-body text-sm font-light text-cream/[0.52] leading-[1.85]">
+              <p className="font-body text-sm font-light text-body-text leading-[1.85]">
                 To become one of India&apos;s most reliable pharmaceutical
                 distribution partners — continuously expanding our reach,
                 strengthening partnerships, and making quality medicines
@@ -127,43 +127,43 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="bg-dark-green py-20 md:py-40 px-5 md:px-10 lg:px-20">
+      <section className="bg-cream py-20 md:py-40 px-5 md:px-10 lg:px-20">
         <div className="max-w-[1280px] mx-auto">
           <ScrollReveal className="text-center mb-24">
             <div className="font-body text-[10.5px] tracking-[4px] text-gold/65 uppercase mb-7">
               What We Stand For
             </div>
             <h2
-              className="font-heading font-light text-cream leading-[1.12] tracking-[-0.5px]"
+              className="font-heading font-light text-dark-green leading-[1.12] tracking-[-0.5px]"
               style={{ fontSize: "clamp(36px, 4vw, 58px)" }}
             >
               Principles behind
               <br />
-              <em className="text-gold/[0.82]">every delivery.</em>
+              <em>every delivery.</em>
             </h2>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5">
             {values.map((v, i) => (
               <ScrollReveal key={v.num} delay={i % 3}>
-                <div className="group relative overflow-hidden cursor-default bg-cream/[0.04] border border-cream/[0.08] p-[52px_44px_48px] transition-all duration-[400ms] hover:bg-cream/[0.07] hover:border-gold/[0.22]">
+                <div className="group relative overflow-hidden cursor-default bg-white border border-gold/[0.14] p-[52px_44px_48px] transition-all duration-[400ms] hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(245,166,35,0.14)]">
                   <div className="absolute top-5 right-7 font-heading text-[72px] font-light text-gold/10 leading-none select-none pointer-events-none">
                     {v.num}
                   </div>
                   <div className="font-body text-[10.5px] tracking-[3px] text-gold/60 uppercase mb-6">
                     {v.num}
                   </div>
-                  <h3 className="font-heading text-[26px] font-normal text-cream leading-[1.22] mb-[22px]">
+                  <h3 className="font-heading text-[26px] font-normal text-dark-green leading-[1.22] mb-[22px]">
                     {v.name}
                   </h3>
                   <div className="w-7 h-px bg-gold/40 mb-[22px]" />
-                  <p className="font-body text-sm font-light text-cream/[0.52] leading-[1.82]">
+                  <p className="font-body text-sm font-light text-body-text leading-[1.82]">
                     {v.desc}
                   </p>
                   <div
                     className="absolute bottom-0 left-0 h-0.5 w-0 transition-[width] duration-500 group-hover:w-full"
                     style={{
-                      background: "linear-gradient(to right, #D4A853, rgba(212,168,83,0.3))",
+                      background: "linear-gradient(to right, #F5A623, rgba(245,166,35,0.3))",
                       transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
                     }}
                   />
@@ -175,10 +175,10 @@ export default function AboutPage() {
       </section>
 
       {/* Closing statement */}
-      <section className="bg-darkest py-24 md:py-32 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]">
+      <section className="bg-white py-24 md:py-32 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]">
         <ScrollReveal className="max-w-[760px] mx-auto text-center">
           <p
-            className="font-heading font-light italic text-cream leading-[1.4] mb-14"
+            className="font-heading font-light italic text-dark-green leading-[1.4] mb-14"
             style={{ fontSize: "clamp(24px, 2.6vw, 34px)" }}
           >
             Taviar — Delivering Trust. Distributing Care. Empowering
@@ -193,7 +193,7 @@ export default function AboutPage() {
             </Link>
             <Link
               href="/#contact"
-              className="font-body text-[11px] tracking-[2px] text-cream/[0.58] uppercase no-underline border-b border-gold/30 pb-0.5 transition-colors duration-[250ms] hover:text-cream"
+              className="font-body text-[11px] tracking-[2px] text-dark-green/70 uppercase no-underline border-b border-dark-green/20 pb-0.5 transition-colors duration-[250ms] hover:text-dark-green hover:border-dark-green"
             >
               Get in touch →
             </Link>

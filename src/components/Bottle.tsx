@@ -8,7 +8,7 @@ export default function Bottle() {
       style={{
         height: "58vh",
         filter:
-          "drop-shadow(0 70px 120px rgba(0,0,0,.65)) drop-shadow(0 24px 55px rgba(212,168,83,.22))",
+          "drop-shadow(0 50px 90px rgba(120,88,40,.16)) drop-shadow(0 24px 55px rgba(245,166,35,.22))",
         animation: "floatBottle 7s ease-in-out infinite",
       }}
     >
@@ -87,14 +87,14 @@ export default function Bottle() {
       <path d="M47 176 C45 192 44 208 44 222 L44 368" stroke="rgba(255,255,255,.25)" strokeWidth="1.2" fill="none" strokeLinecap="round" />
       <path d="M121 196 C123 210 124 226 124 240 L124 402 C122 418 120 430 118 438" stroke="rgba(255,255,255,.18)" strokeWidth="1.4" fill="none" strokeLinecap="round" />
       {/* LABEL */}
-      <rect x="38" y="248" width="84" height="118" rx="1" fill="url(#lbG)" stroke="rgba(212,175,80,.22)" strokeWidth=".5" />
-      <text x="80" y="275" textAnchor="middle" fontFamily="Georgia,serif" fontSize="6.5" fill="rgba(212,175,80,.9)" letterSpacing="3">THE SKIN</text>
-      <text x="80" y="290" textAnchor="middle" fontFamily="Georgia,serif" fontSize="6.5" fill="rgba(212,175,80,.9)" letterSpacing="3">PHARMACY</text>
-      <line x1="50" y1="298" x2="110" y2="298" stroke="rgba(212,175,80,.3)" strokeWidth=".4" />
-      <text x="80" y="314" textAnchor="middle" fontFamily="Georgia,serif" fontSize="5.8" fill="rgba(212,175,80,.65)" letterSpacing="1.5" fontStyle="italic">Kumkumadi Elixir</text>
-      <text x="80" y="328" textAnchor="middle" fontFamily="Georgia,serif" fontSize="5" fill="rgba(212,175,80,.5)" letterSpacing="1">No. I · 30 ml</text>
-      <line x1="50" y1="336" x2="110" y2="336" stroke="rgba(212,175,80,.2)" strokeWidth=".4" />
-      <text x="80" y="351" textAnchor="middle" fontFamily="Georgia,serif" fontSize="4.5" fill="rgba(212,175,80,.44)" letterSpacing="2.5">DOSHA FORMULATION</text>
+      <rect x="38" y="248" width="84" height="118" rx="1" fill="url(#lbG)" stroke="rgba(245,175,35,.22)" strokeWidth=".5" />
+      <text x="80" y="275" textAnchor="middle" fontFamily="Georgia,serif" fontSize="6.5" fill="rgba(245,175,35,.9)" letterSpacing="3">THE SKIN</text>
+      <text x="80" y="290" textAnchor="middle" fontFamily="Georgia,serif" fontSize="6.5" fill="rgba(245,175,35,.9)" letterSpacing="3">PHARMACY</text>
+      <line x1="50" y1="298" x2="110" y2="298" stroke="rgba(245,175,35,.3)" strokeWidth=".4" />
+      <text x="80" y="314" textAnchor="middle" fontFamily="Georgia,serif" fontSize="5.8" fill="rgba(245,175,35,.65)" letterSpacing="1.5" fontStyle="italic">Kumkumadi Elixir</text>
+      <text x="80" y="328" textAnchor="middle" fontFamily="Georgia,serif" fontSize="5" fill="rgba(245,175,35,.5)" letterSpacing="1">No. I · 30 ml</text>
+      <line x1="50" y1="336" x2="110" y2="336" stroke="rgba(245,175,35,.2)" strokeWidth=".4" />
+      <text x="80" y="351" textAnchor="middle" fontFamily="Georgia,serif" fontSize="4.5" fill="rgba(245,175,35,.44)" letterSpacing="2.5">DOSHA FORMULATION</text>
       <ellipse cx="80" cy="460" rx="46" ry="7" fill="rgba(218,178,58,.1)" />
     </svg>
   );

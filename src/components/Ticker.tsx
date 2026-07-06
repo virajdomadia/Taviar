@@ -3,7 +3,7 @@ const TEXT =
 
 export default function Ticker() {
   return (
-    <div className="overflow-hidden bg-ticker py-[15px] border-y border-gold/[0.13]">
+    <div className="overflow-hidden bg-white py-[15px] border-y border-gold/[0.13]">
       <div
         className="flex whitespace-nowrap"
         style={{ animation: "spTicker 24s linear infinite" }}

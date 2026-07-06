@@ -86,9 +86,9 @@ export default function HeroCanvas() {
           b.y,
           b.r
         );
-        g.addColorStop(0, `rgba(212,168,83,${b.a * 2.6})`);
-        g.addColorStop(0.5, `rgba(180,140,58,${b.a})`);
-        g.addColorStop(1, "rgba(180,140,58,0)");
+        g.addColorStop(0, `rgba(245,166,35,${b.a * 2.6})`);
+        g.addColorStop(0.5, `rgba(220,130,20,${b.a})`);
+        g.addColorStop(1, "rgba(220,130,20,0)");
         ctx.fillStyle = g;
         ctx.beginPath();
         ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
@@ -109,7 +109,7 @@ export default function HeroCanvas() {
         ctx.save();
         ctx.globalAlpha = p.a * tw;
         if (p.strand) {
-          ctx.strokeStyle = `rgba(218,178,82,${p.a * tw * 1.25})`;
+          ctx.strokeStyle = `rgba(250,180,35,${p.a * tw * 1.25})`;
           ctx.lineWidth = p.sz * 0.6;
           ctx.lineCap = "round";
           const ex = p.x + Math.cos(p.ang) * p.len;
@@ -131,8 +131,8 @@ export default function HeroCanvas() {
             p.y,
             p.sz * 2.8
           );
-          g2.addColorStop(0, `rgba(248,210,98,${p.a * tw})`);
-          g2.addColorStop(1, "rgba(212,168,83,0)");
+          g2.addColorStop(0, `rgba(255,215,100,${p.a * tw})`);
+          g2.addColorStop(1, "rgba(245,166,35,0)");
           ctx.fillStyle = g2;
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.sz * 2.8, 0, Math.PI * 2);
