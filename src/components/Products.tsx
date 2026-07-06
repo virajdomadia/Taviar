@@ -6,7 +6,7 @@ const products = [
     id: "d-stress",
     name: "D-Stress",
     pack: "30 Capsules",
-    image: "/product-dstress-removebg-preview.png",
+    image: "/product-dstress.jpg",
     benefits: [
       "Natural Herbal Formula",
       "Helps Reduce Everyday Stress",
@@ -23,7 +23,7 @@ const products = [
     id: "gluok",
     name: "GluOK",
     pack: "90 Tablets",
-    image: "/product-gluok-removebg-preview.png",
+    image: "/product-gluok.jpg",
     benefits: [
       "Helps Maintain Healthy Blood Sugar Levels",
       "Supports Healthy Glucose Metabolism",
@@ -38,7 +38,7 @@ const products = [
     id: "relievain",
     name: "Relievain",
     pack: "30 Tablets",
-    image: "/product-relievain-removebg-preview.png",
+    image: "/product-relievain.jpg",
     benefits: [
       "Helps Relieve Joint & Muscle Discomfort",
       "Supports Healthy Joint Mobility",
@@ -51,7 +51,7 @@ const products = [
     id: "muvoquick",
     name: "Muvoquick",
     pack: "100 gm",
-    image: "/product-muvoquick-removebg-preview.png",
+    image: "/product-muvoquick.jpg",
     benefits: [
       "Supports Muscle Strength & Recovery",
       "Promotes Joint Flexibility & Mobility",
@@ -64,7 +64,7 @@ const products = [
     id: "orthomantra",
     name: "OrthoMantra",
     pack: "60 Tablets",
-    image: "/product-orthomantra-removebg-preview.png",
+    image: "/product-orthomantra.jpg",
     benefits: [
       "Supports Bone Strength & Density",
       "Promotes Healthy Joint Function",
@@ -77,7 +77,7 @@ const products = [
     id: "salt-ed",
     name: "Salt-ed",
     pack: "2 Capsules",
-    image: "/product-salted-removebg-preview.png",
+    image: "/product-salted.jpg",
     benefits: [
       "Supports Men's Vitality",
       "Enhances Stamina & Endurance",
@@ -90,7 +90,7 @@ const products = [
     id: "fem-fit",
     name: "FEM-FIT Syrup",
     pack: "225ml",
-    image: "/product-femfit-removebg-preview.png",
+    image: "/product-femfit.jpg",
     benefits: [
       "Supports Uterine Health",
       "Promotes Menstrual Balance",
@@ -104,7 +104,7 @@ const products = [
     id: "kid-ubs",
     name: "Kid-UBS Syrup",
     pack: "225ml",
-    image: "/product-kidubes-removebg-preview.png",
+    image: "/product-respiquite.jpg",
     benefits: [
       "Supports Urinary System Health",
       "Promotes Healthy Urinary Flow",
