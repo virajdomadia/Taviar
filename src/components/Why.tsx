@@ -4,7 +4,7 @@ const features = [
   {
     num: "01",
     name: "Quality Assured Products",
-    desc: "Every product is sourced from certified manufacturers and undergoes strict quality standards before it ever reaches a shelf.",
+    desc: "Every product is sourced from certified manufacturers and undergoes strict quality standards.",
     span: "lg:col-span-2",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6" aria-hidden>
@@ -83,7 +83,7 @@ const features = [
 
 export default function Why() {
   return (
-    <section id="why" className="relative overflow-hidden px-5 py-24 md:px-10 md:py-36 lg:px-20" style={{ background: "linear-gradient(180deg, #F4F7FD 0%, #FFFFFF 100%)" }}>
+    <section id="why" className="relative overflow-hidden px-5 py-6 md:px-10 md:py-9 lg:px-20" style={{ background: "linear-gradient(180deg, #F4F7FD 0%, #FFFFFF 100%)" }}>
       <div className="v2-dots absolute inset-0 opacity-40 [mask-image:linear-gradient(to_bottom,black,transparent_55%)]" />
 
       <div className="relative mx-auto max-w-[1280px]">
@@ -98,9 +98,9 @@ export default function Why() {
               className="font-v2-head leading-[1.08] font-medium tracking-[-1px] text-[#06123A]"
               style={{ fontSize: "clamp(36px, 4vw, 60px)" }}
             >
-              Five reasons doctors
+              Trusted Healthcare
               <br />
-              <em className="v2-grad-text italic">keep coming back.</em>
+              <em className="v2-grad-text italic">Partner.</em>
             </h2>
           </Reveal>
           <Reveal variant="right" delay={150} className="max-w-[320px]">
@@ -141,32 +141,6 @@ export default function Why() {
               </div>
             </Reveal>
           ))}
-
-          {/* Filler CTA tile to complete the bento */}
-          <Reveal delay={220}>
-            <a
-              href="#contact"
-              className="group relative flex h-full min-h-[220px] flex-col items-start justify-between overflow-hidden rounded-[26px] p-9 text-white shadow-[0_24px_60px_rgba(30,64,175,0.3)] transition-all duration-500 hover:-translate-y-1.5"
-              style={{ background: "linear-gradient(140deg, #1D4ED8, #1E40AF 55%, #312E81)" }}
-            >
-              <div
-                className="pointer-events-none absolute -top-16 -right-16 h-48 w-48 rounded-full bg-white/15 blur-2xl"
-                style={{ animation: "v2Breathe 6s ease-in-out infinite" }}
-              />
-              <div className="font-v2-body text-[10px] font-bold tracking-[3px] uppercase opacity-80">
-                Ready when you are
-              </div>
-              <div>
-                <div className="font-v2-head mb-4 text-[28px] leading-[1.2] font-semibold">
-                  Let&apos;s build a healthier supply chain, together.
-                </div>
-                <span className="font-v2-body inline-flex items-center gap-2 text-[12px] font-bold tracking-[2px] uppercase">
-                  Get in touch
-                  <span className="transition-transform duration-300 group-hover:translate-x-1.5">→</span>
-                </span>
-              </div>
-            </a>
-          </Reveal>
         </div>
       </div>
     </section>

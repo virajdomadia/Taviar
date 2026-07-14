@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
-import BackgroundGradient from "@/components/BackgroundGradient";
+import { Fraunces, Outfit } from "next/font/google";
 import "./globals.css";
+import "./v2.css";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const fraunces = Fraunces({
+  variable: "--font-v2-head",
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "600"],
   style: ["normal", "italic"],
 });
 
-const jakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta",
+const outfit = Outfit({
+  variable: "--font-v2-body",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "The Skin Pharmacy — Ayurvedic Skin Science",
+  title: "Taviar — Ayurveda, Reimagined",
   description:
-    "Premium Ayurvedic skincare formulated to pharmaceutical standards. Where ancient wisdom meets modern skin science.",
+    "Taviar Enterprises — where Ayurveda meets modern health care. Genuine Ayurvedic medicines, GMP certified, AYUSH licensed, distributed pan-India.",
 };
 
 export default function RootLayout({
@@ -30,13 +30,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${jakarta.variable}`}
+      className={`${fraunces.variable} ${outfit.variable}`}
       suppressHydrationWarning
     >
-      <body className="font-body">
-        <BackgroundGradient />
-        {children}
-      </body>
+      <body className="v2-root font-v2-body">{children}</body>
     </html>
   );
 }

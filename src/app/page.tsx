@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Ticker from "@/components/Ticker";
 import About from "@/components/About";
-import WhyChooseUs from "@/components/WhyChooseUs";
+import Why from "@/components/Why";
 import Products from "@/components/Products";
 import Certifications from "@/components/Certifications";
 import Partner from "@/components/Partner";
@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Ticker />
       <About />
-      <WhyChooseUs />
+      <Why />
       <Products />
       <Certifications />
       <Partner />
