@@ -16,7 +16,7 @@ export default function Contact() {
         className="absolute top-0 inset-x-0 h-px"
         style={{
           background:
-            "linear-gradient(to right, transparent, rgba(245,166,35,0.35), transparent)",
+            "linear-gradient(to right, transparent, rgba(30,64,175,0.35), transparent)",
         }}
       />
       {/* Background glow */}
@@ -24,7 +24,7 @@ export default function Contact() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 60% 70% at 30% 40%, rgba(245,166,35,0.06) 0%, transparent 70%)",
+            "radial-gradient(ellipse 60% 70% at 30% 40%, rgba(30,64,175,0.06) 0%, transparent 70%)",
         }}
       />
 

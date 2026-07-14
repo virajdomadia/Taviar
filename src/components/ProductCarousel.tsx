@@ -83,7 +83,7 @@ export default function Product3DRotator() {
           className="absolute inset-0 rounded-full opacity-40 blur-3xl pointer-events-none"
           style={{
             background:
-              'radial-gradient(circle, rgba(245,166,35,0.35) 0%, transparent 70%)',
+              'radial-gradient(circle, rgba(30,64,175,0.35) 0%, transparent 70%)',
           }}
         />
 
@@ -137,7 +137,7 @@ export default function Product3DRotator() {
           className="absolute -inset-8 rounded-full opacity-20 blur-2xl"
           style={{
             background:
-              'radial-gradient(circle, rgba(245,166,35,0.4) 0%, transparent 70%)',
+              'radial-gradient(circle, rgba(30,64,175,0.4) 0%, transparent 70%)',
             animation: 'pulseGlow 3s ease-in-out infinite',
           }}
         />

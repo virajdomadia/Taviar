@@ -146,7 +146,7 @@ export default function Products() {
               delay={i % 3}
               className="group"
             >
-              <div className="relative bg-white rounded-3xl overflow-hidden transition-all duration-500 ease-out hover:shadow-[0_24px_80px_rgba(245,166,35,0.16)]">
+              <div className="relative bg-white rounded-3xl overflow-hidden transition-all duration-500 ease-out hover:shadow-[0_24px_80px_rgba(30,64,175,0.16)]">
                 {/* Image Container - 1:1 aspect ratio */}
                 <div className="relative w-full aspect-square overflow-hidden bg-gradient-to-br from-cream to-gold/10">
                   <Image

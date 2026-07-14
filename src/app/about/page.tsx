@@ -30,7 +30,7 @@ export default function AboutPage() {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse 60% 70% at 70% 20%, rgba(245,166,35,0.1) 0%, transparent 68%)",
+              "radial-gradient(ellipse 60% 70% at 70% 20%, rgba(30,64,175,0.1) 0%, transparent 68%)",
           }}
         />
         <div className="relative max-w-[1280px] mx-auto text-center">
@@ -90,7 +90,7 @@ export default function AboutPage() {
       <section className="bg-white py-20 md:py-36 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]">
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-0.5">
           <ScrollReveal>
-            <div className="bg-cream border border-gold/[0.16] p-[52px_44px_48px] h-full hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(245,166,35,0.14)]">
+            <div className="bg-cream border border-gold/[0.16] p-[52px_44px_48px] h-full hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(30,64,175,0.14)]">
               <div className="font-body text-[10.5px] tracking-[3px] text-gold/60 uppercase mb-6">
                 Our Mission
               </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
             </div>
           </ScrollReveal>
           <ScrollReveal delay={2}>
-            <div className="bg-cream border border-gold/[0.16] p-[52px_44px_48px] h-full hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(245,166,35,0.14)]">
+            <div className="bg-cream border border-gold/[0.16] p-[52px_44px_48px] h-full hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(30,64,175,0.14)]">
               <div className="font-body text-[10.5px] tracking-[3px] text-gold/60 uppercase mb-6">
                 Our Vision
               </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5">
             {values.map((v, i) => (
               <ScrollReveal key={v.num} delay={i % 3}>
-                <div className="group relative overflow-hidden cursor-default bg-white border border-gold/[0.14] p-[52px_44px_48px] transition-all duration-[400ms] hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(245,166,35,0.14)]">
+                <div className="group relative overflow-hidden cursor-default bg-white border border-gold/[0.14] p-[52px_44px_48px] transition-all duration-[400ms] hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(30,64,175,0.14)]">
                   <div className="absolute top-5 right-7 font-heading text-[72px] font-light text-gold/10 leading-none select-none pointer-events-none">
                     {v.num}
                   </div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
                   <div
                     className="absolute bottom-0 left-0 h-0.5 w-0 transition-[width] duration-500 group-hover:w-full"
                     style={{
-                      background: "linear-gradient(to right, #F5A623, rgba(245,166,35,0.3))",
+                      background: "linear-gradient(to right, #1E40AF, rgba(30,64,175,0.3))",
                       transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
                     }}
                   />

@@ -13,7 +13,7 @@ function CertIcon() {
       className="w-14 h-14 rounded-full border border-gold/45 mx-auto mb-7 flex items-center justify-center"
       style={{
         background:
-          "radial-gradient(circle at 38% 34%, rgba(245,166,35,0.22), rgba(245,166,35,0.04))",
+          "radial-gradient(circle at 38% 34%, rgba(30,64,175,0.22), rgba(30,64,175,0.04))",
       }}
     >
       <div className="w-5 h-5 rounded-full border-[1.5px] border-gold/85" />
@@ -48,7 +48,7 @@ export default function Certifications() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5">
           {certs.map((cert, i) => (
             <ScrollReveal key={cert.name} delay={i}>
-              <div className="group bg-cream border border-gold/[0.16] p-[48px_36px] text-center transition-all duration-[400ms] hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(245,166,35,0.14)]">
+              <div className="group bg-cream border border-gold/[0.16] p-[48px_36px] text-center transition-all duration-[400ms] hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(30,64,175,0.14)]">
                 <CertIcon />
                 <h3 className="font-heading text-[23px] font-normal text-dark-green mb-1.5">
                   {cert.name}

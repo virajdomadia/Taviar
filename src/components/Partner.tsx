@@ -32,7 +32,7 @@ export default function Partner() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5 mb-16">
           {partners.map((p, i) => (
             <ScrollReveal key={p.num} delay={i}>
-              <div className="group relative overflow-hidden cursor-pointer bg-cream border border-gold/[0.16] p-[56px_44px_48px] transition-all duration-[400ms] hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(245,166,35,0.14)] h-full flex flex-col">
+              <div className="group relative overflow-hidden cursor-pointer bg-cream border border-gold/[0.16] p-[56px_44px_48px] transition-all duration-[400ms] hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(30,64,175,0.14)] h-full flex flex-col">
                 <div className="absolute top-5 right-7 font-heading text-[72px] font-light text-gold/10 leading-none select-none pointer-events-none">
                   {p.num}
                 </div>
@@ -51,7 +51,7 @@ export default function Partner() {
                   className="absolute bottom-0 left-0 h-0.5 w-0 transition-[width] duration-500 group-hover:w-full"
                   style={{
                     background:
-                      "linear-gradient(to right, #F5A623, rgba(245,166,35,0.3))",
+                      "linear-gradient(to right, #1E40AF, rgba(30,64,175,0.3))",
                     transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
                   }}
                 />

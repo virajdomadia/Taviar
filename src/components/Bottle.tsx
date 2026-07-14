@@ -8,7 +8,7 @@ export default function Bottle() {
       style={{
         height: "58vh",
         filter:
-          "drop-shadow(0 50px 90px rgba(120,88,40,.16)) drop-shadow(0 24px 55px rgba(245,166,35,.22))",
+          "drop-shadow(0 50px 90px rgba(120,88,40,.16)) drop-shadow(0 24px 55px rgba(30,64,175,.22))",
         animation: "floatBottle 7s ease-in-out infinite",
       }}
     >

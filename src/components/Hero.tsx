@@ -1,5 +1,11 @@
+"use client";
+
 import HeroCanvas from "./HeroCanvas";
 import ProductCarousel from "./ProductCarousel";
+
+function scrollToSection(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+}
 
 export default function Hero() {
   return (
@@ -7,6 +13,14 @@ export default function Hero() {
       id="hero"
       className="relative w-full min-h-screen bg-white overflow-hidden flex items-center pt-36 pb-20 md:pt-40 lg:pt-44"
     >
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 90% 75% at 50% 0%, rgba(30,64,175,0.32), transparent 70%), linear-gradient(160deg, #E4EAF7 0%, #F6F8FD 40%, #FFFFFF 100%)",
+        }}
+      />
+
       <HeroCanvas />
 
 
@@ -14,7 +28,7 @@ export default function Hero() {
         {/* Left copy */}
         <div className="text-center lg:text-left">
           <div
-            className="font-body text-[10.5px] tracking-[5px] text-gold/70 uppercase mb-13"
+            className="font-body text-[10.5px] tracking-[5px] text-gold uppercase mb-13 font-bold"
             style={{ animation: "fadeInUp .8s ease both" }}
           >
             Established 2024 · Trusted Healthcare Partner
@@ -29,13 +43,13 @@ export default function Hero() {
           >
             Where
             <br />
-            <em className="italic font-light">Ayurveda</em>
+            <em className="italic font-bold">Ayurveda</em>
             <br />
             Meets Modern Health Care
           </h1>
 
           <p
-            className="font-heading text-lg md:text-xl font-light italic text-dark-green/85 leading-[1.65] tracking-[0.3px] max-w-[500px] mx-auto lg:mx-0 mb-14"
+            className="font-heading text-lg md:text-xl font-bold italic text-dark-green/85 leading-[1.65] tracking-[0.3px] max-w-[500px] mx-auto lg:mx-0 mb-14"
             style={{ animation: "fadeInUp .9s .32s ease both" }}
           >
             Every product we deliver reflects our commitment to quality,
@@ -46,18 +60,20 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center gap-5"
             style={{ animation: "fadeInUp .9s .46s ease both" }}
           >
-            <a
-              href="#products"
-              className="font-body text-[14px] tracking-[3px] font-bold text-dark-green bg-gold uppercase no-underline px-10 py-[17px] inline-block transition-colors duration-300 hover:bg-gold-hover"
+            <button
+              type="button"
+              onClick={() => scrollToSection("partner")}
+              className="font-body text-[14px] tracking-[3px] font-bold text-dark-green bg-gold uppercase px-10 py-[17px] inline-block transition-colors duration-300 hover:bg-gold-hover cursor-pointer"
             >
-              Explore Products
-            </a>
-            <a
-              href="#about"
-              className="font-body text-[14px] tracking-[2px] font-bold text-dark-green/70 uppercase no-underline border-b border-dark-green/20 pb-0.5 transition-colors duration-[250ms] hover:text-dark-green hover:border-dark-green"
+              Partner With Us
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToSection("about")}
+              className="font-body text-[14px] tracking-[2px] font-bold text-dark-green/70 uppercase border-b border-dark-green/20 pb-0.5 transition-colors duration-[250ms] hover:text-dark-green hover:border-dark-green cursor-pointer"
             >
               About Taviar →
-            </a>
+            </button>
           </div>
         </div>
 

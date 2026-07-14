@@ -10,7 +10,7 @@ const features = [
 
 function FeatureCard({ num, name, desc }: { num: string; name: string; desc: string }) {
   return (
-    <div className="group relative overflow-hidden cursor-pointer h-full bg-cream border border-gold/[0.16] p-[52px_44px_48px] transition-all duration-[400ms] hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(245,166,35,0.14)]">
+    <div className="group relative overflow-hidden cursor-pointer h-full bg-cream border border-gold/[0.16] p-[52px_44px_48px] transition-all duration-[400ms] hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(30,64,175,0.14)]">
       <div className="absolute top-5 right-7 font-heading text-[72px] font-light text-gold/10 leading-none select-none pointer-events-none">
         {num}
       </div>
@@ -24,7 +24,7 @@ function FeatureCard({ num, name, desc }: { num: string; name: string; desc: str
       <div
         className="absolute bottom-0 left-0 h-0.5 w-0 transition-[width] duration-500 group-hover:w-full"
         style={{
-          background: "linear-gradient(to right, #F5A623, rgba(245,166,35,0.3))",
+          background: "linear-gradient(to right, #1E40AF, rgba(30,64,175,0.3))",
           transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
         }}
       />

@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Ticker from "@/components/Ticker";
 import About from "@/components/About";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Products from "@/components/Products";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+      <Ticker />
       <About />
       <WhyChooseUs />
       <Products />

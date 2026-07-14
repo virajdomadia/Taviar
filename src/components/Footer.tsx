@@ -77,7 +77,7 @@ export default function Footer() {
           className="h-px mb-10"
           style={{
             background:
-              "linear-gradient(to right, transparent, rgba(245,166,35,0.22), transparent)",
+              "linear-gradient(to right, transparent, rgba(30,64,175,0.22), transparent)",
           }}
         />
 

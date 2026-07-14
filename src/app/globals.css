@@ -4,15 +4,15 @@
   --font-heading: var(--font-cormorant);
   --font-body: var(--font-jakarta);
 
-  --color-cream: #F7F2E9;
-  --color-dark-green: #1A2820;
-  --color-gold: #F5A623;
-  --color-gold-hover: #E67E22;
-  --color-gold-light: rgba(245, 166, 35, 0.08);
-  --color-body-text: #484840;
-  --color-muted: #6A6A5A;
-  --color-stat: #8A8A78;
-  --color-faq: #5A5A4E;
+  --color-cream: #FFFFFF;
+  --color-dark-green: #0A1730;
+  --color-gold: #1E40AF;
+  --color-gold-hover: #1E3A8A;
+  --color-gold-light: rgba(30, 64, 175, 0.08);
+  --color-body-text: #313B4B;
+  --color-muted: #4D5B71;
+  --color-stat: #707C8D;
+  --color-faq: #3C465B;
 }
 
 @layer base {
@@ -22,28 +22,28 @@
 
   body {
     background: var(--color-cream);
-    color: #1e1e1e;
+    color: #0A1730;
     overflow-x: hidden;
   }
 
   ::selection {
-    background: rgba(245, 166, 35, 0.22);
+    background: rgba(30, 64, 175, 0.22);
   }
 
   ::-webkit-scrollbar {
     width: 3px;
   }
   ::-webkit-scrollbar-track {
-    background: rgba(26, 40, 32, 0.08);
+    background: rgba(10, 23, 48, 0.08);
   }
   ::-webkit-scrollbar-thumb {
-    background: rgba(245, 166, 35, 0.45);
+    background: rgba(30, 64, 175, 0.45);
     border-radius: 2px;
   }
 
   input::placeholder,
   textarea::placeholder {
-    color: rgba(26, 40, 32, 0.35);
+    color: rgba(10, 23, 48, 0.35);
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.4px;
