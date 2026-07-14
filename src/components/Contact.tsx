@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-white py-20 md:py-40 px-5 md:px-10 lg:px-20"
+      className="relative overflow-hidden bg-transparent py-20 md:py-40 px-5 md:px-10 lg:px-20"
     >
       {/* Top accent line */}
       <div

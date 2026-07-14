@@ -10,7 +10,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="bg-cream py-10 px-5 md:px-10 lg:px-20">
+    <section id="about" className="bg-transparent py-10 px-5 md:px-10 lg:px-20">
       <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-[120px] items-center">
         {/* Left copy */}
         <ScrollReveal>

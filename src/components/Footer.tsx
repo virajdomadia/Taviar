@@ -21,7 +21,7 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white px-5 md:px-10 lg:px-20 pt-14 md:pt-[88px] pb-11 border-t border-dark-green/[0.06]">
+    <footer className="bg-transparent px-5 md:px-10 lg:px-20 pt-14 md:pt-[88px] pb-11 border-t border-dark-green/[0.06]">
       <div className="max-w-[1280px] mx-auto">
         {/* Columns */}
         <div

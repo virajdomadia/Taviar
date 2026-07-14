@@ -63,7 +63,7 @@ export default function Hero() {
             <button
               type="button"
               onClick={() => scrollToSection("partner")}
-              className="font-body text-[14px] tracking-[3px] font-bold text-dark-green bg-gold uppercase px-10 py-[17px] inline-block transition-colors duration-300 hover:bg-gold-hover cursor-pointer"
+              className="font-body text-[14px] tracking-[3px] font-bold text-white bg-gold uppercase px-10 py-[17px] inline-block transition-colors duration-300 hover:bg-gold-hover cursor-pointer"
             >
               Partner With Us
             </button>

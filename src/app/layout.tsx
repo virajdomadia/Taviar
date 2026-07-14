@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import BackgroundGradient from "@/components/BackgroundGradient";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -32,7 +33,10 @@ export default function RootLayout({
       className={`${cormorant.variable} ${jakarta.variable}`}
       suppressHydrationWarning
     >
-      <body className="font-body">{children}</body>
+      <body className="font-body">
+        <BackgroundGradient />
+        {children}
+      </body>
     </html>
   );
 }

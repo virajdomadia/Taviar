@@ -25,7 +25,7 @@ export default function AboutPage() {
       <Navbar />
 
       {/* Page header */}
-      <section className="relative bg-white overflow-hidden pt-40 pb-24 md:pt-52 md:pb-32 px-5 md:px-10 lg:px-20">
+      <section className="relative bg-transparent overflow-hidden pt-40 pb-24 md:pt-52 md:pb-32 px-5 md:px-10 lg:px-20">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -54,7 +54,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story */}
-      <section className="bg-cream py-20 md:py-36 px-5 md:px-10 lg:px-20">
+      <section className="bg-transparent py-20 md:py-36 px-5 md:px-10 lg:px-20">
         <div className="max-w-[820px] mx-auto">
           <ScrollReveal>
             <div className="font-body text-[13px] font-semibold tracking-[4px] text-gold uppercase mb-9">
@@ -87,7 +87,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-white py-20 md:py-36 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]">
+      <section className="bg-transparent py-20 md:py-36 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]">
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-0.5">
           <ScrollReveal>
             <div className="bg-cream border border-gold/[0.16] p-[52px_44px_48px] h-full hover:border-gold/[0.4] hover:shadow-[0_16px_40px_rgba(30,64,175,0.14)]">
@@ -127,7 +127,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="bg-cream py-20 md:py-40 px-5 md:px-10 lg:px-20">
+      <section className="bg-transparent py-20 md:py-40 px-5 md:px-10 lg:px-20">
         <div className="max-w-[1280px] mx-auto">
           <ScrollReveal className="text-center mb-24">
             <div className="font-body text-[10.5px] tracking-[4px] text-gold/65 uppercase mb-7">
@@ -175,7 +175,7 @@ export default function AboutPage() {
       </section>
 
       {/* Closing statement */}
-      <section className="bg-white py-24 md:py-32 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]">
+      <section className="bg-transparent py-24 md:py-32 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]">
         <ScrollReveal className="max-w-[760px] mx-auto text-center">
           <p
             className="font-heading font-light italic text-dark-green leading-[1.4] mb-14"

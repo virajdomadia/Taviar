@@ -25,7 +25,7 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="bg-white py-20 md:py-40 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]"
+      className="bg-transparent py-20 md:py-40 px-5 md:px-10 lg:px-20 border-t border-gold/[0.08]"
     >
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}

@@ -34,7 +34,7 @@ function FeatureCard({ num, name, desc }: { num: string; name: string; desc: str
 
 export default function WhyChooseUs() {
   return (
-    <section id="why" className="bg-white py-20 md:py-40 px-5 md:px-10 lg:px-20 border-t border-dark-green/[0.06]">
+    <section id="why" className="bg-transparent py-20 md:py-40 px-5 md:px-10 lg:px-20 border-t border-dark-green/[0.06]">
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-8 md:gap-0 mb-14 md:mb-[100px]">

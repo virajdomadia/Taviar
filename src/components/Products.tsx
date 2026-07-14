@@ -118,7 +118,7 @@ const products = [
 
 export default function Products() {
   return (
-    <section id="products" className="bg-white py-20 px-5 md:px-10 lg:px-20">
+    <section id="products" className="bg-transparent py-20 px-5 md:px-10 lg:px-20">
       <div className="max-w-[1400px] mx-auto">
         {/* Header */}
         <ScrollReveal className="text-center mb-28">

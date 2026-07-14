@@ -8,7 +8,7 @@ const partners = [
 
 export default function Partner() {
   return (
-    <section id="partner" className="bg-white py-10 md:py-20 px-5 md:px-10 lg:px-20 border-t border-dark-green/[0.06]">
+    <section id="partner" className="bg-transparent py-10 md:py-20 px-5 md:px-10 lg:px-20 border-t border-dark-green/[0.06]">
       <div className="max-w-[1280px] mx-auto">
         {/* Header */}
         <ScrollReveal className="text-center mb-24">
